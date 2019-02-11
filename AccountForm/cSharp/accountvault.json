@@ -1,0 +1,20 @@
+{
+  "accountvault": {
+    "payment_method": "cc",
+    "location_id": "@locationID",
+    "contact_id": "@contactID",
+    "account_vault_api_id": "@acctVaultAPIID",
+    "title": "Account_vault",
+    "account_holder_name": "SDK Test",
+    "show_street": true,
+    "show_account_holder_name": true,
+    "show_zip": true,
+    "send_parent_message": 0,
+    "parent_close": true,
+    "parent_close_delay": 5,
+    "parent_origin": null,
+    "display_close_button": true,
+    "redirect_url_on_approval": "https://www.google.com",
+    "redirect_url_delay": 10
+  }
+}

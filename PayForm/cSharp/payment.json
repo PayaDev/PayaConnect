@@ -1,0 +1,26 @@
+{
+  "transaction": {
+    "payment_method": "cc",
+    "action": "sale",
+    "transaction_amount": "1.00",
+    "location_id": "@locationID",
+    "contact_id": "@contactID",
+    "transaction_api_id": "@transAPIID",
+    "billing_address": "123 Main St",
+    "billing_zip": "31405",
+    "product_transaction_id": "@prodTransID",
+    "account_holder_name": "SDK Test",
+    "order_num": "SDK Test 1",
+    "entry_method": "manual",
+    "show_street": true,
+    "show_account_holder_name": true,
+    "show_zip": true,
+    "send_parent_message": 0,
+    "parent_close": true,
+    "parent_close_delay": 5,
+    "parent_origin": null,
+    "display_close_button": true,
+    "redirect_url_on_approval": "https://www.google.com",
+    "redirect_url_delay": 10
+  }
+}
