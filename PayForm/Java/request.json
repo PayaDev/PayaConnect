@@ -1,0 +1,22 @@
+{
+    "transaction":{
+        "payment_method": "cc",
+        "action": "sale",
+        "transaction_amount": "7.00",
+        "location_id": "@locationID",
+        "transaction_api_id": "@transactionAPIID",
+        "billing_street": "123 Main St",
+        "billing_zip": "31405",
+        "product_transaction_id": "@productTransactionID",
+        "order_num": "@orderNumber",
+        "contact_id": "@contactID",
+        "stylesheet_url": "",
+        "parent_close": true,
+        "parent_close_delay": 5,
+        "display_close_button": 1,
+        "require_zip": 1,
+        "require_street": 1,
+        "show_street": 1,
+        "show_zip": 1
+    }
+}
