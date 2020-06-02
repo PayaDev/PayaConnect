@@ -1,0 +1,17 @@
+{
+  "transaction": {
+    "action": "sale",
+    "payment_method": "cc",
+    "location_id": "[Location ID]",
+    "transaction_amount": "7.00",
+    "tax": "1.00",
+    "account_number": "5454545454545454",
+    "exp_date": "1221",
+    "order_num": "SDK Invoice 123",
+    "cvv": "123",
+    "description": "SDK Test CC Sale",
+    "save_account": 1,
+    "billing_street": "123 Main St",
+    "billing_zip": "31405"
+  }
+}
