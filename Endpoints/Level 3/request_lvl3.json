@@ -1,0 +1,52 @@
+{
+	"transactionlevel3": {
+		"transaction_id": "@transactionID",
+		"level3_data": {
+			"national_tax": "2",
+			"tax_exempt": "0",
+			"sales_tax": "0",
+			"freight_amount": "0",
+			"duty_amount": "0",
+			"shipto_zip_code": "12345",
+			"shipfrom_zip_code": "12345",
+			"destination_country_code": "840",
+			"tax_amount": "0",
+			"line_items": [
+				{
+					"commodity_code": "123456",
+					"description": "item A",
+					"product_code": "12678",
+					"quantity": "1",
+					"unit_code": "GLL",
+					"unit_cost": "1",
+					"alternate_tax_id": "1234",
+					"tax_rate": "0",
+					"tax_type_applied": "22",
+					"tax_amount": "1",
+					"debit_credit": "C",
+					"discount_amount": "0",
+					"other_tax_amount": "0",
+					"discount_rate": "1",
+					"tax_type_id": "11"
+				},
+				{
+					"commodity_code": "123457",
+					"description": "item B",
+					"product_code": "22345",
+					"quantity": "1",
+					"unit_code": "GLL",
+					"unit_cost": "1",
+					"alternate_tax_id": "1234",
+					"tax_rate": "0",
+					"tax_type_applied": "22",
+					"tax_amount": "1",
+					"debit_credit": "C",
+					"discount_amount": "0",
+					"other_tax_amount": "0",
+					"discount_rate": "1",
+					"tax_type_id": "11"
+				}
+			]
+		}
+	}
+}
