@@ -1,0 +1,14 @@
+{
+	"quickinvoice": {
+		"title":"SDK Quick Invoice Example",
+		"due_date":"2020-08-20",
+		"item_list": {
+			"SDK Support Fee":10,
+			"Email Support Fee":11
+		},
+		"location_id":"@locationID",
+		"email": "sdksupport@paya.com",
+		"notification_days_before_due_date": "0",
+		"notification_on_due_date": "0"
+	}
+}
