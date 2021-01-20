@@ -48,7 +48,7 @@ class MainClass
         // required for HPP, but will allow your requests to record
         // to the request logs within the developer portal and allow
         // Paya to track requests from your solution in production.
-        var developerID = "c66bf";
+        var developerID = "[Developer ID]";
 
         // Use JSON request from file.
         StreamReader sr = new StreamReader("sale.json");
