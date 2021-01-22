@@ -13,8 +13,6 @@ Contact: sdksupport@paya.com
   // More details on this request can be found at 
   // https://docs.payaconnect.com/developers/api/endpoints/contacts
 
-  require('contactspayload.json');
-
   // Build full endpoint URL
   $host = "https://api.sandbox.payaconnect.com";
   $endpoint = "/v2/contacts";
@@ -27,8 +25,8 @@ Contact: sdksupport@paya.com
   $userAPIKey = "[User API Key]";
   
   // Build Payload
-  $request = file_get_contents('contactspayload.json');
-  $payload = str_replace($request);
+  $payload = file_get_contents('contactspayload.json');
+  //$payload = str_replace($request);
   
   // Set headers and connection details
   $config = [
