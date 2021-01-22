@@ -2,7 +2,7 @@
     "contact": {
         "location_id": "[Location ID]",
         "last_name": "Smith",
-        "contact_api_id": "[Contact API ID]",
+        "contact_api_id": "@contactAPIId",
         "first_name": "John",
         "account_number": "123456-7",
         "company_name": "Fuzzy Bunny Slippers, Inc."
