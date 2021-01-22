@@ -19,14 +19,17 @@ Contact: sdksupport@paya.com
   $url = $host . $endpoint;
   $verb = "POST";
 
+  // Build request variables
+  $contactAPIId = "contact" . time(); // see notes on API docs for additional information about this variable  https://docs.payaconnect.com/developers/api/endpoints/contacts#fields
+
   // Developer/Integration User Credentials
   $developerid = "[Developer ID]";
   $userid = "[User ID]";
   $userAPIKey = "[User API Key]";
   
   // Build Payload
-  $payload = file_get_contents('contactspayload.json');
-  //$payload = str_replace($request);
+  $request = file_get_contents('contactspayload.json');
+  $payload = str_replace("@contactAPIId",$contactAPIId,$request);
   
   // Set headers and connection details
   $config = [
