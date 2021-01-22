@@ -1,0 +1,17 @@
+{
+    "contact": {
+        "location_id": "[Location ID]",
+        "last_name": "Smith",
+        "contact_api_id": "@contactAPIId",
+        "first_name": "John",
+        "account_number": "123456-7",
+        "company_name": "Fuzzy Bunny Slippers, Inc.",
+        "address": "5800 NW 39th AVE",
+        "city": "Anywhere",
+        "state": "GA",
+        "zip": "32606",
+        "cell_phone": "5558675309",
+        "update_if_exists": 1,
+        "contact_balance": "245.65"
+    }
+}
