@@ -1,20 +1,17 @@
 {
     "contact": {
-        //required fields
-        "location_id": "123456789012345678901234", //the location id from the merchant account in Paya Connect.
+        "location_id": "[Location ID]",
         "last_name": "Smith",
-        //optional fields but recommended 
-        "contact_api_id": "137", //Contacts unique id used by API clients. This field is required if update_if_exists is set to '1'. This field can be used to correlate Contacts in our system to data within an outside software integration. In addition, when running a transaction, this value can be used in place of contact_id in order to associate the transaction with a contact.
+        "contact_api_id": "[Contact API ID]",
         "first_name": "John",
-        "account_number": "123456-7", //Can be used to maintain a balance for the contact.
+        "account_number": "123456-7",
         "company_name": "Fuzzy Bunny Slippers, Inc."
         "address": "5800 NW 39th AVE",
         "city": "Anywhere",
         "state": "GA",
         "zip": "32606",
         "cell_phone": "5558675309",
-        "update_if_exists": 1, //Allows for updating of contacts using the POST method. If this field is set to '1' when POSTing, the contact will be updated (instead of returning 422 error) if it already exists.
-        "contact_balance": "245.65"  //Can be used to maintain a balance for the contact.
-        // Additional contact fields can be found at https://docs.payaconnect.com/developers/api/endpoints/contacts#fields
+        "update_if_exists": 1,
+        "contact_balance": "245.65"
     }
 }
