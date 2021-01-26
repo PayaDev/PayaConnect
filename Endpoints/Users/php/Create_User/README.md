@@ -11,7 +11,7 @@ Paya Connect: A powerful integrated platform for commerce and payment enablement
 
 * Once a User ID is returned move onto setting the Auth Roles for the user.  
 
-* credntials that must be stored for this integration.
+* credentials that must be stored for this integration.
 -- user_id
 -- user_api_key
 -- user_hash_key 
