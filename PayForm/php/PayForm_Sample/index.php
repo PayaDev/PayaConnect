@@ -44,7 +44,7 @@ Contact: sdksupport@paya.com
             "location_id" => $locationID,  // Required field
             "contact_id" => $contactID, // optional, but recommended
             "transaction_api_id" => $acctVaultAPIID,
-            "account_vault_api_id" => $acctVaultAPIID,  // Required field
+            //"account_vault_api_id" => $acctVaultAPIID,  // Required field
             "account_holder_name" => "john smith",
             "billing_street" => "123 Main St",
             "billing_zip" => "31405",

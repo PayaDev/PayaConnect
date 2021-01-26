@@ -9,29 +9,22 @@ Contact: sdksupport@paya.com
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 -----------------------------------------------*/
   
-  // Used to GET information about a location based
-  // on Location API ID this will need to be provided to
-  // Paya Connect as part of the location general information.
-
+  // Used to validate an application that has been created.
   // More details on this request can be found at 
-  // https://docs.payaconnect.com/developers/api/endpoints/locationinfos
-
-  // Additional filters can be applied to supply only the product 
-  // transaction ids on the account and their common name [title] by
-  // adding additional $query "?field=value&field2=value2..."  
+  // https://docs.payaconnect.com/developers/boarding-api-integration-application/boarding-api-endpoint-actions#validateapplication
 
   // Build full endpoint URL
-  $host = "https://api.sandbox.payaconnect.com";
-  $endpoint = "/v2/locationinfos";
-  $query = "?location_api_id=[location-api-id]";
-  $url = $host . $endpoint . $query;
+  $host = "https://boarding.sandbox.payaconnect.com";
+  $endpoint = "/v1/application/";
+  $applicationId = "[Application ID]";
+  $url = $host . $endpoint . $applicationId . "/validate";
   $verb = "GET";
 
   // Developer/Integration User Credentials
-  $developerid = "[Developer_id]";
-  $userid = "[User_id]";
-  $userAPIKey = "[User_API_id]";
-  
+  $developerid = "[Developer ID]";
+  $userid = "[User ID]";
+  $userAPIKey = "[User API Key]";
+
   // Set headers and connection details
   $config = [
   "http" => [

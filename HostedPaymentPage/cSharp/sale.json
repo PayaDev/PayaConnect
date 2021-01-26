@@ -1,0 +1,31 @@
+{
+  "id": "@hppID",
+  "transaction_api_id": "@transAPIID",
+  "field_configuration": {
+    "header": {
+      "fields": [
+        {
+          "id": "header_title",
+          "label": "Paya SDK Hosted Payment Page"
+        }
+      ]
+    },
+    "body": {
+      "fields": [
+        {
+          "id": "transaction_amount",
+          "value": "7.00"
+        },
+        {
+          "id": "account_type",
+          "value": "visa",
+          "visible": false
+        }
+      ]
+    }
+  },
+  "redirect_url_on_approve": "https://www.google.com",
+  "redirect_url_on_decline": "https://www.bing.com",
+  "redirect_url_delay": "15",
+  "parent_send_message": 0
+}

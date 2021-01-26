@@ -1,0 +1,127 @@
+{
+	"businessOwnership": {
+		"ownershipType": "C Corporation"
+	},
+	"businessIndustry": {
+		"industryType": "38",
+		"industrySic": "1731"
+	},
+	"customerConsent": {
+		"secCodes": "WEB"
+	},
+	"owner1Information": {
+		"title": "Mr",
+		"firstName": "Joseph",
+		"lastName": "Smith",
+		"address": "1600 Pennsylvania Avenue",
+		"unit": "Unit 5",
+		"city": "Atlanta",
+		"state": "GA",
+		"zipCode": "30346",
+		"dateOfBirth": "1950-10-15",
+		"socialSecurityNumber": "123456789",
+		"driversLicenseNumber": "ABC123456789",
+		"driversLicenseState": "GA",
+		"phoneNumber": "1235559876",
+		"faxNumber": "1235559876",
+		"emailAddress": "example@example.com"
+	},
+	"owner2Information": {
+		"title": "Mr",
+		"firstName": "Joseph",
+		"lastName": "Smith",
+		"address": "1600 Pennsylvania Avenue",
+		"unit": "Unit 5",
+		"city": "Atlanta",
+		"state": "GA",
+		"zipCode": "30346",
+		"dateOfBirth": "1950-10-15",
+		"socialSecurityNumber": "123456789",
+		"driversLicenseNumber": "ABC123456789",
+		"driversLicenseState": "GA",
+		"phoneNumber": "1235559876",
+		"faxNumber": "1235559876",
+		"emailAddress": "example@example.com"
+	},
+	"owner3Information": {
+		"title": "Mr",
+		"firstName": "Joseph",
+		"lastName": "Smith",
+		"address": "1600 Pennsylvania Avenue",
+		"unit": "Unit 5",
+		"city": "Atlanta",
+		"state": "GA",
+		"zipCode": "30346",
+		"dateOfBirth": "1950-10-15",
+		"socialSecurityNumber": "123456789",
+		"driversLicenseNumber": "ABC123456789",
+		"driversLicenseState": "GA",
+		"phoneNumber": "1235559876",
+		"faxNumber": "1235559876",
+		"emailAddress": "example@example.com"
+	},
+	"owner4Information": {
+		"title": "Mr",
+		"firstName": "Joseph",
+		"lastName": "Smith",
+		"address": "1600 Pennsylvania Avenue",
+		"unit": "Unit 5",
+		"city": "Atlanta",
+		"state": "GA",
+		"zipCode": "30346",
+		"dateOfBirth": "1950-10-15",
+		"socialSecurityNumber": "123456789",
+		"driversLicenseNumber": "ABC123456789",
+		"driversLicenseState": "GA",
+		"phoneNumber": "1235559876",
+		"faxNumber": "1235559876",
+		"emailAddress": "example@example.com"
+	},
+	"ownerEquity": {
+		"owner1": 25,
+		"owner2": 25,
+		"owner3": 25,
+		"owner4": 25
+	},
+	"organizationInformation": {
+		"organizationName": "ACME, Inc.",
+		"employerIdentificationNumber": "12-3456789",
+		"website": "http://www.example.com/"
+	},
+	"organizationContact": {
+		"title": "Mr",
+		"firstName": "Joseph",
+		"lastName": "Smith",
+		"phoneNumber": "1234567890",
+		"emailAddress": "example@example.com"
+	},
+	"organizationLocation": {
+		"address": "1600 Pennsylvania Avenue",
+		"unit": "Unit 5",
+		"city": "Atlanta",
+		"state": "GA",
+		"zipCode": "30346",
+		"phoneNumber": "18002255288"
+	},
+	"organizationAddress": {
+		"address": "1600 Pennsylvania Avenue",
+		"unit": "Unit 5",
+		"city": "Atlanta",
+		"state": "GA",
+		"zipCode": "30346",
+		"phoneNumber": "1235559876"
+	},
+	"bankInformation": {
+		"routingNumber": "072000326",
+		"accountNumber": "1234567890",
+		"accountNumberReEnter": "1234567890",
+		"bankName": "Bank of America"
+	},
+	"salesInformation": {
+		"monthlyVolume": 15000,
+		"averageTicket": 250,
+		"highestTicket": 25000,
+		"amexAnnualVolume": 0,
+		"amexMarketingOptOut": true
+	}
+}
