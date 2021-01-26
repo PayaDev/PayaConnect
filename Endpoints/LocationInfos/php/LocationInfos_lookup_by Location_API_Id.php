@@ -9,10 +9,14 @@ Contact: sdksupport@paya.com
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 -----------------------------------------------*/
   
-  // Used to GET information about a location based on Location API ID this will need to be provided to Paya Connect as part of the location general information. 
+  // Used to GET information about a location based
+  // on Location API ID this will need to be provided to
+  // Paya Connect as part of the location general information.
   // More details on this request can be found at 
   // https://docs.payaconnect.com/developers/api/endpoints/locationinfos
-  // additional filters can be applied to supply only the product transaction ids on the account and their common name [title] by adding additional $query "?field=value&field2=value2..."  
+  // additional filters can be applied to supply only the product 
+  // transaction ids on the account and their common name [title] by
+  // adding additional $query "?field=value&field2=value2..."  
 
   // Build full endpoint URL
   $host = "https://api.sandbox.payaconnect.com";
