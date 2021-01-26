@@ -27,7 +27,7 @@ Contact: sdksupport@paya.com
   $userAPIKey = [Partner Global integration User API Key]];
   
   // Build Payload
-  $request = file_get_contents('intergationuserauthrole.json');
+  $request = file_get_contents('integrationuserauthrole.json');
   
   // Set headers and connection details
   $config = [
