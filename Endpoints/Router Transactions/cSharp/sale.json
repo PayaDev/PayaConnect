@@ -1,0 +1,15 @@
+{
+  "routertransaction": {
+    "action": "sale",
+    "payment_method": "cc",
+    "location_id": "@locationId",
+    "terminal_id": "@terminalId",
+    "transaction_amount": "1.00",
+    "tax": "0.01",
+    "order_num": "Invoice @timestamp",
+    "description": "SDK Test Mock Terminal CC Sale",
+    "save_account": 1,
+    "billing_street": "123 Main St",
+    "billing_zip": "31405"
+  }
+}
