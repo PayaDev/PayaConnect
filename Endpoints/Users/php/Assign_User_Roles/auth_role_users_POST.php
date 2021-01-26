@@ -12,7 +12,7 @@ Contact: sdksupport@paya.com
   // Used to add integration roles for integrations users ONLY with Paya Connect APIs.
   // Additional location users must be createed in the Paya Connect UI.
   // More details on this request can be found at 
-  // https://docs.payaconnect.com/developers/api/endpoints/authrolesusers
+  // https://docs.payaconnect.com/developers/api/endpoints/authroleusers
   // review the README.md file for additional information about configuration
 
   // Build full endpoint URL
