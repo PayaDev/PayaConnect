@@ -1,0 +1,13 @@
+{
+    "user": {
+        "primary_location_id": "[location_id]",
+        "branding_domain_id": "[branding_domain_id]",
+        "last_name": "Integration",
+        "first_name": "User",
+        "email": "support@domain.com",
+        "username": "DBA Integration User",
+        "user_type_id": "300",
+        "user_api_key": "[generated unique 24 to 64 characters]",
+        "user_hash_key": "[generated unique 24 to 64 characters]"
+    }
+}
