@@ -17,7 +17,7 @@ Contact: sdksupport@paya.com
 
   // Build full endpoint URL
   $host = "https://api.sandbox.payaconnect.com";
-  $endpoint = "/v2/authrolesusers";
+  $endpoint = "/v2/authroleusers";
   $url = $host . $endpoint;
   $verb = "POST";
 
