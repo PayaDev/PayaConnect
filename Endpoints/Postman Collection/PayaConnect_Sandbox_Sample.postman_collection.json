@@ -1,0 +1,268 @@
+{
+	"info": {
+		"_postman_id": "c525f4c2-a5e1-4f51-9359-1e376f156a43",
+		"name": "PayaConnect_Sandbox_Sample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Transaction_CC_AuthOnly_Sample",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "developer-id",
+						"value": "[Developer ID]"
+					},
+					{
+						"key": "user-api-key",
+						"value": "[Sandbox User API Key]"
+					},
+					{
+						"key": "user-id",
+						"value": "[Sandbox User ID]"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"transaction\": {\n\t\t\"action\": \"authonly\",\n\t\t\"payment_method\": \"cc\",\n\t\t\"location_id\": \"{{locationId}}\",\n\t\t\"product_transaction_id\": \"{{ccProductTransactionID}}\",\n\t\t\"transaction_amount\": \"1.00\",\n\t\t\"tax\": \"0.00\",\n\t\t\"po_number\": \"123456\",\n\t\t\"order_num\": \"SDKTest {{timestamp}}\",\n\t\t\"account_number\": \"5454545454545454\",\n\t\t\"exp_date\": \"1230\",\n\t\t\"cvv\": \"999\",\n\t\t\"billing_street\": \"580 Executive Place\",\n\t\t\"billing_zip\": \"31405\",\n\t\t\"custom_data\": {\n\t\t\t\"item_name\": \"cog\",\n\t\t\t\"item_sku\": \"123456\",\n\t\t\t\"item_value\": \"1.00\"\n\t\t}\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://api.sandbox.payaconnect.com/v2/transactions",
+					"protocol": "https",
+					"host": [
+						"api",
+						"sandbox",
+						"payaconnect",
+						"com"
+					],
+					"path": [
+						"v2",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transaction_CC_Sale_Sample",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "developer-id",
+						"value": "[Developer ID]"
+					},
+					{
+						"key": "user-api-key",
+						"value": "[Sandbox User API Key]"
+					},
+					{
+						"key": "user-id",
+						"value": "[Sandbox User ID]"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"transaction\": {\n    \"action\": \"sale\",\n    \"payment_method\": \"cc\",\n    \"account_type\": \"mc\",\n    \"location_id\": \"{{locationId}}\",\n\t\"product_transaction_id\": \"{{ccProductTransactionID}}\",\n    \"transaction_amount\": \"1.00\",\n    \"order_num\": \"SDKTest {{timestamp}}\",\n    \"account_number\": \"5454545454545454\",\n    \"exp_date\": \"1230\",\n    \"cvv\": \"999\",\n    \"billing_street\": \"123 Main St\",\n    \"billing_zip\": \"31405\"\n\t\t}\n}"
+				},
+				"url": {
+					"raw": "https://api.sandbox.payaconnect.com/v2/transactions",
+					"protocol": "https",
+					"host": [
+						"api",
+						"sandbox",
+						"payaconnect",
+						"com"
+					],
+					"path": [
+						"v2",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transaction_CC_Void_Sample",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "developer-id",
+						"value": "[Developer ID]"
+					},
+					{
+						"key": "user-api-key",
+						"value": "[Sandbox User API Key]"
+					},
+					{
+						"key": "user-id",
+						"value": "[Sandbox User ID]"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"transaction\": {\n    \"action\": \"void\"\n    }\n}"
+				},
+				"url": {
+					"raw": "https://api.sandbox.payaconnect.com/v2/transactions/[Transaction ID]",
+					"protocol": "https",
+					"host": [
+						"api",
+						"sandbox",
+						"payaconnect",
+						"com"
+					],
+					"path": [
+						"v2",
+						"transactions",
+						"[Transaction ID]"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transaction_CC_Refund_Previous_ID_Sample",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "developer-id",
+						"value": "[Developer ID]"
+					},
+					{
+						"key": "user-api-key",
+						"value": "[Sandbox User API Key]"
+					},
+					{
+						"key": "user-id",
+						"value": "[Sandbox User ID]"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"transaction\": {\n    \"action\": \"refund\",\n\t\"payment_method\": \"cc\",\n    \"previous_transaction_id\": \"[Previous Transaction ID]\",\n    \"transaction_amount\": \"1.00\",\n    \"location_id\": \"{{locationId}}\"\n\t\t}\n}"
+				},
+				"url": {
+					"raw": "https://api.sandbox.payaconnect.com/v2/transactions",
+					"protocol": "https",
+					"host": [
+						"api",
+						"sandbox",
+						"payaconnect",
+						"com"
+					],
+					"path": [
+						"v2",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transaction_ACH_Debit_Sample",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "developer-id",
+						"value": "[Developer ID]"
+					},
+					{
+						"key": "user-api-key",
+						"value": "[Sandbox User API Key]"
+					},
+					{
+						"key": "user-id",
+						"value": "[Sandbox User ID]"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"transaction\": {\n\"action\":\"debit\",\n\"location_id\": \"{{locationId}}\",\n\"product_transaction_id\": \"{{achWEBProductTransactionID}}\",\n\"account_number\": \"2079951060953\",\n\"routing\": \"072000326\",\n\"payment_method\": \"ach\",\n\"transaction_amount\":\"1.00\",\n\"account_type\": \"checking\",\n\"account_holder_name\": \"SDK Test\",\n\"ach_sec_code\":\"WEB\",\n\"transaction_api_id\": \"sdk{{timestamp}}\"\n}\n}"
+				},
+				"url": {
+					"raw": "https://api.sandbox.payaconnect.com/v2/transactions",
+					"protocol": "https",
+					"host": [
+						"api",
+						"sandbox",
+						"payaconnect",
+						"com"
+					],
+					"path": [
+						"v2",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transaction_ACH_Credit_Previous_ID_Sample",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "developer-id",
+						"value": "[Developer ID]"
+					},
+					{
+						"key": "user-api-key",
+						"value": "[Sandbox User API Key]"
+					},
+					{
+						"key": "user-id",
+						"value": "[Sandbox User ID]"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"transaction\": {\n\"action\":\"credit\",\n\"location_id\": \"{{locationId}}\",\n\"product_transaction_id\": \"{{achCCDProductTransactionID}}\",\n\"previous_transaction_id\": \"[Previous Transaction ID]\",\n\"payment_method\": \"ach\",\n\"transaction_amount\":\"1.00\",\n\"account_type\": \"checking\",\n\"account_holder_name\": \"SDK Test\",\n\"ach_sec_code\":\"CCD\"\n}\n}"
+				},
+				"url": {
+					"raw": "https://api.sandbox.payaconnect.com/v2/transactions",
+					"protocol": "https",
+					"host": [
+						"api",
+						"sandbox",
+						"payaconnect",
+						"com"
+					],
+					"path": [
+						"v2",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
