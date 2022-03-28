@@ -12,3 +12,7 @@ When utilizing a widget-style hosted payment form such as PayForm, Paya recommen
 * Utilize CAPTCHA/reCAPTCHA
 * Tokenize URL that hosts access to the hosted form
 * Utilize IP Address velocity detection
+
+## [Quick Start Guide](https://github.com/PayaDev/PayaConnect/blob/master/QuickStart.md)
+
+Not sure where to get started? Check out our [Quick Start Guide](https://github.com/PayaDev/PayaConnect/blob/master/QuickStart.md) to give you an overview of our integration methods and hosted forms.
