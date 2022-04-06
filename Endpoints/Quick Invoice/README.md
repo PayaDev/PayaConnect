@@ -83,7 +83,7 @@ It is possible to create a QuickInvoice and attach files to it in a single reque
 
 The following code examples demonstrate how this can be done across a few different popular languages.  You may need to extrapolate the concepts found here to whatever specific solution you are implementing.
 
-For additional information on working with QuickInvoices and file attachments, please take a look at our [File Attachments](Readme.md#File-Attachments) documentation further below on this page.
+For additional information on working with QuickInvoices and file attachments, please take a look at our [File Attachments](README.md#file-attachments) documentation further below on this page.
 
 `POST /v2/quickinvoices`
 
