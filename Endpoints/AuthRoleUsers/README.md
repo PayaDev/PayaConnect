@@ -120,3 +120,9 @@ No JSON Response, only HTTP Response Code provided:
 404 - Fail (authroleuser not found)
 ```
 
+## Fields
+| Name         | Min | Max | Format | POST Required | POST Allowed | Comments                            |
+|--------------|-----|-----|--------|---------------|--------------|-------------------------------------|
+| id           | 24  | 36  | string |               |              | The authroleusers unique identifier |
+| user_id      | 24  | 36  | string | ✔             | ✔            |                                     |
+| auth_role_id | 1   | 11  | string | ✔             | ✔            |                                     |
