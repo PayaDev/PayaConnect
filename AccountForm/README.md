@@ -200,9 +200,14 @@ When the user submits this form, the form data will then be submitted back to th
 
 ## 5. Process is complete
 Once the process is complete, the iframe may either automatically close the window it appears in or the user may be redirected to a different URL.  There are 3 methods to obtain the response data from the vault request.
-1. The simplest method is to assign an `account_vault_api_id` to the vault within the request JSON then use a GET request against the AccountVaults Endpoint to obtain the data from the vault record.
-2. Next, would be to setup a listener and use our Postback service to obtain realtime results POSTed to your server.
-3. Finally, there is the option of Post Message allowing the vault data that is sent back to be passed to the parent page. With changes to iframe permissions in most recent browser releases this method is not recommended as we cannot guarantee consistent results.
+1. The simplest method is to assign an `account_vault_api_id` to the request within the request JSON then use a GET request against the AccountVaults Endpoint to obtain the data from the Account Vault record.
+
+   **Example:**
+   ```
+   GET https://api.sandbox.payaconnect.com/v2/accountvaults?account_vault_api_id=[Account Vault API ID]
+   ```
+2. Next, would be to setup a listener and use our [Postback](https://docs.payaconnect.com/developers/api/post-backs) service to obtain realtime results POSTed to your server.
+3. Finally, there is the option of Post Message allowing the transaction data that is sent back to be passed to the parent page. With changes to iframe permissions in most recent browser releases this method is not recommended as we cannot guarantee consistent results.
 
 ### If you have any question please reach out to our team.
 * Full Documentation: https://docs.payaconnect.com/developers

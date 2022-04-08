@@ -208,7 +208,12 @@ When the user submits this form, the form data will then be submitted back to th
 ## 5. Process is complete
 Once the process is complete, the iframe may either automatically close the window it appears in or the user may be redirected to a different URL.  There are 3 methods to obtain the response data from the transaction request.
 1. The simplest method is to assign a `transaction_api_id` to the transaction within the request JSON then use a GET request against the Transactions Endpoint to obtain the data from the transaction record.
-2. Next, would be to setup a listener and use our Postback service to obtain realtime results POSTed to your server.
+
+   **Example:**
+   ```
+   GET https://api.sandbox.payaconnect.com/v2/transactions?transaction_api_id=[Transaction API ID]
+   ```
+2. Next, would be to setup a listener and use our [Postback](https://docs.payaconnect.com/developers/api/post-backs) service to obtain realtime results POSTed to your server.
 3. Finally, there is the option of Post Message allowing the transaction data that is sent back to be passed to the parent page. With changes to iframe permissions in most recent browser releases this method is not recommended as we cannot guarantee consistent results.
 
 ### If you have any question please reach out to our team.
