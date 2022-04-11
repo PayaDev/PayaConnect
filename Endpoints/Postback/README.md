@@ -264,5 +264,105 @@ The following table defines the fields that are utilized in configuring the post
 
 ##### Response
 
+```json
+{
+  "postbackconfig": {
+    "id": "1028asnfias9f2j9sddf92jrwfskd",
+    "location_id": "23948sdnfia1129i9asf92",
+    "resource": "contact",
+    "on_create": "1",
+    "on_update": "1",
+    "on_delete": "0",
+    "url": "https://127.0.0.1/updates",
+    "is_active": "1",
+    "format": "api-default",
+    "number_of_attempts": 3,
+    "attempt_interval": 300,
+    "expands": "",
+    "created_ts": 1539268970,
+    "modified_ts": 1539269531,
+    "_links": {
+      "self": {
+        "href": "https://api.sandbox.domain.com/v2/postbackconfigs/1028asnfias9f2j9sddf92jrwfskd"
+      }
+    }
+  }
+}
+```
+
+## Postback Data Format
+
+### Contact
+##### ON_CREATE
+```json
+{
+    "type":"CREATE",
+    "resource":"contact",
+    "number_of_attempts":1,
+    "data":"{\"id\":\"11e66c8a943ff4b2bf1b2102\",\"location_id\":\"23948sdnfia1129i9asf92\",\"account_number\":null,\"contact_api_id\":null,\"company_name\":null,\"first_name\":null,\"last_name\":\"Lue\",\"email\":null,\"address\":null,\"city\":null,\"state\":null,\"zip\":null,\"home_phone\":null,\"cell_phone\":null,\"office_phone\":null,\"office_ext_phone\":null,\"email_trx_receipt\":false,\"created_ts\":1472325312,\"modified_ts\":1472325312,\"date_of_birth\":null,\"header_message\":null,\"header_message_type_id\":0,\"contact_c1\":null,\"contact_c2\":null,\"contact_c3\":null,\"contact_balance\":null}"
+}
+```
+##### ON_UPDATE
+```json
+{
+    "type": "UPDATE",
+    "resource": "contact",
+    "number_of_attempts": "1",
+    "data": "{\"id\":\"11e936d6559825f4ac10d9fe\",\"location_id\":\"11e936d64d69cd92845615e4\",\"account_number\":null,\"contact_api_id\":null,\"company_name\":\"sdffhgj\",\"first_name\":null,\"last_name\":\"setupe_contactL3U1C1\",\"email\":\"contact3@gmail.com\",\"address\":null,\"city\":null,\"state\":null,\"zip\":null,\"home_phone\":null,\"cell_phone\":null,\"office_phone\":null,\"office_ext_phone\":null,\"email_trx_receipt\":true,\"created_ts\":1550862979,\"modified_ts\":1550863706,\"date_of_birth\":null,\"header_message\":null,\"header_message_type_id\":0,\"contact_c1\":null,\"contact_c2\":null,\"contact_c3\":null,\"contact_balance\":null}"
+}
+```
+
+### Transaction
+##### ON_CREATE
+```json
+{
+    "type": "CREATE",
+    "resource": "transaction",
+    "number_of_attempts": "1",
+    "data": "{\"id\":\"11e936d6fc3bd9f0a5bfb0e0\",\"payment_method\":\"cc\",\"account_vault_id\":null,\"recurring_id\":null,\"first_six\":\"545454\",\"last_four\":\"5454\",\"account_holder_name\":null,\"transaction_amount\":\"1.00\",\"description\":null,\"transaction_code\":null,\"avs\":\"BAD\",\"batch\":\"1\",\"order_num\":\"655684728790\",\"verbiage\":\"APPROVAL\",\"transaction_settlement_status\":null,\"effective_date\":null,\"routing\":null,\"return_date\":null,\"created_ts\":1550863259,\"modified_ts\":1550863259,\"transaction_api_id\":null,\"terms_agree\":null,\"notification_email_address\":null,\"notification_email_sent\":true,\"response_message\":null,\"auth_amount\":\"1.00\",\"auth_code\":\"36d6fc\",\"status_id\":101,\"type_id\":20,\"location_id\":\"11e936d64b8b4956b0d41be0\",\"reason_code_id\":1000,\"contact_id\":null,\"billing_zip\":\"12345\",\"billing_street\":null,\"product_transaction_id\":\"11e936d6d3dcd8b0ba78ae83\",\"tax\":\"0.00\",\"customer_ip\":null,\"customer_id\":null,\"po_number\":null,\"avs_enhanced\":\"N\",\"cvv_response\":\"N\",\"billing_phone\":null,\"billing_city\":null,\"billing_state\":null,\"clerk_number\":null,\"tip_amount\":\"0.98\",\"created_user_id\":\"11e936d64ef008ac9e3f5164\",\"modified_user_id\":\"11e936d64ef008ac9e3f5164\",\"ach_identifier\":null,\"check_number\":null,\"settle_date\":null,\"charge_back_date\":null,\"void_date\":null,\"account_type\":\"mc\",\"is_recurring\":false,\"is_accountvault\":false,\"transaction_c1\":null,\"transaction_c2\":null,\"transaction_c3\":null,\"additional_amounts\":[],\"terminal_serial_number\":null,\"entry_mode_id\":\"K\",\"terminal_id\":null,\"quick_invoice_id\":null,\"ach_sec_code\":null,\"custom_data\":null,\"hosted_payment_page_id\":null,\"trx_source_id\":12,\"emv_receipt_data\":null}"
+}
+```
+
+##### ON_UPDATE
+```json
+{
+    "type": "UPDATE",
+    "resource": "transaction",
+    "number_of_attempts": "1",
+    "data": "{\"id\":\"11e936d6fc3bd9f0a5bfb0e0\",\"payment_method\":\"cc\",\"account_vault_id\":null,\"recurring_id\":null,\"first_six\":\"545454\",\"last_four\":\"5454\",\"account_holder_name\":null,\"transaction_amount\":\"1.00\",\"description\":\"testupdate\",\"transaction_code\":null,\"avs\":\"BAD\",\"batch\":\"1\",\"order_num\":\"655684728790\",\"verbiage\":\"APPROVAL\",\"transaction_settlement_status\":null,\"effective_date\":null,\"routing\":null,\"return_date\":null,\"created_ts\":1550863259,\"modified_ts\":1550863452,\"transaction_api_id\":null,\"terms_agree\":null,\"notification_email_address\":null,\"notification_email_sent\":true,\"response_message\":null,\"auth_amount\":\"1.00\",\"auth_code\":\"36d6fc\",\"status_id\":101,\"type_id\":20,\"location_id\":\"11e936d64b8b4956b0d41be0\",\"reason_code_id\":1000,\"contact_id\":null,\"billing_zip\":\"12345\",\"billing_street\":null,\"product_transaction_id\":\"11e936d6d3dcd8b0ba78ae83\",\"tax\":\"0.00\",\"customer_ip\":null,\"customer_id\":null,\"po_number\":null,\"avs_enhanced\":\"N\",\"cvv_response\":\"N\",\"billing_phone\":null,\"billing_city\":null,\"billing_state\":null,\"clerk_number\":null,\"tip_amount\":\"0.98\",\"created_user_id\":\"11e936d64ef008ac9e3f5164\",\"modified_user_id\":\"11e936d64ef008ac9e3f5164\",\"ach_identifier\":null,\"check_number\":null,\"settle_date\":null,\"charge_back_date\":null,\"void_date\":null,\"account_type\":\"mc\",\"is_recurring\":false,\"is_accountvault\":false,\"transaction_c1\":null,\"transaction_c2\":null,\"transaction_c3\":null,\"additional_amounts\":[],\"terminal_serial_number\":null,\"entry_mode_id\":\"K\",\"terminal_id\":null,\"quick_invoice_id\":null,\"ach_sec_code\":null,\"custom_data\":null,\"hosted_payment_page_id\":null,\"trx_source_id\":12,\"emv_receipt_data\":null}"
+}
+```
+
+### Transaction Batch
+##### ON_CREATE
+```json
+{
+    "type": "CREATE",
+    "resource": "transactionbatch",
+    "number_of_attempts": "1",
+    "data": "{\"id\":\"11e92008f72039289e394e29\",\"batch_num\":1,\"is_open\":1,\"processing_status_id\":1,\"product_transaction_id\":\"11e92008e5414a3a84b4313b\",\"created_ts\":1548355848,\"settlement_file_name\":null,\"batch_close_ts\":null,\"changelogs\":[{\"id\":\"11e92008f724cf74a3894128\",\"created_ts\":1548355848,\"action\":\"CREATE\",\"model\":\"TransactionBatch\",\"model_id\":\"11e92008f72039289e394e29\",\"user_id\":\"11e91ff683036176a3616800\",\"changelog_details\":[],\"user\":{\"id\":\"11e91ff683036176a3616800\",\"username\":\"Test Retail me29!ksozlwb\",\"first_name\":\"test\",\"last_name\":\"dummy\"}}]}"
+}
+```
+
+##### ON_UPDATE
+```json
+{
+    "type": "UPDATE",
+    "resource": "transactionbatch",
+    "number_of_attempts": "1",
+    "data": "{\"id\":\"11e92008f72039289e394e29\",\"batch_num\":1,\"is_open\":0,\"processing_status_id\":2,\"product_transaction_id\":\"11e92008e5414a3a84b4313b\",\"created_ts\":1548355848,\"settlement_file_name\":null,\"batch_close_ts\":1548355947,\"changelogs\":[{\"id\":\"11e92009324b13ec8f40afb2\",\"created_ts\":1548355948,\"action\":\"UPDATE\",\"model\":\"TransactionBatch\",\"model_id\":\"11e92008f72039289e394e29\",\"user_id\":\"11e91ff683036176a3616800\",\"changelog_details\":[{\"id\":\"11e9200932514a82ac56be1c\",\"changelog_id\":\"11e92009324b13ec8f40afb2\",\"field\":\"batch_close_ts\",\"old_value\":null},{\"id\":\"11e92009324d39eca8e32af4\",\"changelog_id\":\"11e92009324b13ec8f40afb2\",\"field\":\"is_open\",\"old_value\":\"1\"},{\"id\":\"11e92009324f0dda9bb4094a\",\"changelog_id\":\"11e92009324b13ec8f40afb2\",\"field\":\"processing_status_id\",\"old_value\":\"1\"}],\"user\":{\"id\":\"11e91ff683036176a3616800\",\"username\":\"Test Retail megusozlwb\",\"first_name\":\"test\",\"last_name\":\"dummy\"}},{\"id\":\"11e92009321e23dca349f83e\",\"created_ts\":1548355947,\"action\":\"UPDATE\",\"model\":\"TransactionBatch\",\"model_id\":\"11e92008f72039289e394e29\",\"user_id\":\"11e91ff683036176a3616800\",\"changelog_details\":[{\"id\":\"11e920093227afce9690a3f0\",\"changelog_id\":\"11e92009321e23dca349f83e\",\"field\":\"batch_close_ts\",\"old_value\":null},{\"id\":\"11e920093222b97eaa64aaee\",\"changelog_id\":\"11e92009321e23dca349f83e\",\"field\":\"is_open\",\"old_value\":\"1\"},{\"id\":\"11e92009322546bcb6e6552a\",\"changelog_id\":\"11e92009321e23dca349f83e\",\"field\":\"processing_status_id\",\"old_value\":\"1\"}],\"user\":{\"id\":\"11e91ff683036176a3616800\",\"username\":\"Test Retail megusozlwb\",\"first_name\":\"test\",\"last_name\":\"dummy\"}},{\"id\":\"11e92008f724cf74a3894128\",\"created_ts\":1548355848,\"action\":\"CREATE\",\"model\":\"TransactionBatch\",\"model_id\":\"11e92008f72039289e394e29\",\"user_id\":\"11e91ff683036176a3616800\",\"changelog_details\":[],\"user\":{\"id\":\"11e91ff683036176a3616800\",\"username\":\"Test Retail megusozlwb\",\"first_name\":\"test\",\"last_name\":\"dummy\"}}]}"
+}
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
