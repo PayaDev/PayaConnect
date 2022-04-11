@@ -88,22 +88,22 @@ If you receive a 500 or timeout within your solution it's best to determine if y
 ## Endpoints
 
 Below you will find a list of all our Endpoints.  You can click on any of the specific Endpoints to view information about allowed request types, expected format, and more.
-* Account Vaults
-* Authentication
-* AuthRoleUsers
-* Contacts
-* Device Terms
-* Level3 Data
-* Locations
-* Location Info
-* Notes
-* Post Back Configs
-* Quick Invoices
-* Recurrings
-* Router Account Vaults
-* Router Transactions
-* Signatures
-* Tags
-* Transactions
-* Transaction Batches
-* Users
+* [Account Vaults](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/Account%20Vaults)
+* [Authentication](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/Authentication)
+* [AuthRoleUsers](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/AuthRoleUsers)
+* [Contacts](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/Contacts)
+* [Device Terms]()
+* [Level3 Data](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/Level%203)
+* [Locations]()
+* [Location Info](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/LocationInfos)
+* [Notes]()
+* [Post Back Configs](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/Postback)
+* [Quick Invoices](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/Quick%20Invoice)
+* [Recurrings]()
+* [Router Account Vaults]()
+* [Router Transactions](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/Router%20Transactions)
+* [Signatures](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/Signatures)
+* [Tags]()
+* [Transactions](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/Transactions)
+* [Transaction Batches]()
+* [Users](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/Users/php)
