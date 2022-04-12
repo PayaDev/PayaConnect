@@ -287,6 +287,7 @@ This can be used to skip the next ```{number}``` of regularly scheduled recurrin
 #### Defer Payment
 
 This can be used to skip the next {number} of regularly scheduled recurring payment(s) and add them to the end of the existing recurring cycle. Deferring a payment will ensure that original quantity of installment payments are still collected.
+
 _**Note**: Ongoing Recurrings (recurring_type_id = "o") are NOT applicable for Defer._
 
 ```POST /v2/recurrings/{id}/deferPayment?defer_count={number}```
@@ -452,7 +453,27 @@ This can be used to move a recurring to a status of "active" from "on hold".
 | status                  | 5   | 7   | string     |               |              |             | Current status of recurring Possible values include: "active", "on hold", and "ended"                                                                         |
 | transaction_amount      | 1   | 12  | string     | ✔             | ✔            |             | Amount of recurring                                                                                                                                           |
 
+## Expands (Related Records)
 
+For detail on how to use Expands on an Endpoint, please visit the [Expands (Related Records)] (https://github.com/kcskw/PayaConnect/blob/patch-1/Expand%20(Related%20Records).md) page.
 
+| Related Record      | Filter Name         |
+|---------------------|---------------------|
+| Created User        | created_user        |
+| Account Vault       | account_vault       |
+| Transactions        | transactions        |
+| Signature           | signature           |
+| Location            | location            |
+| Contact             | contact             |
+| Tags                | tags                |
+| Product Transaction | product_transaction |
+
+An example of “expanding” this endpoint to one of the above related records would look like this:
+
+```GET /v2/recurrings/xxxxxxxxxxxxxxxxxxxxxxxx?expand=location```
+
+To use multiple expands on this endpoint, simply include them both separated by a comma like so:
+
+```GET /v2/recurrings/xxxxxxxxxxxxxxxxxxxxxxxx?expand=location,created_user```
 
 
