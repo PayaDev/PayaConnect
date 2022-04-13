@@ -92,7 +92,7 @@ Below you will find a list of all our Endpoints.  You can click on any of the sp
 * [Authentication](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/Authentication)
 * [AuthRoleUsers](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/AuthRoleUsers)
 * [Contacts](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/Contacts)
-* [Device Terms]()
+* [Device Terms](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/Device%20Terms)
 * [Level3 Data](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/Level%203)
 * [Locations]()
 * [Location Info](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/LocationInfos)
