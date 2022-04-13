@@ -228,7 +228,7 @@ In contrast to using expands to get extra data, you can use filters to limit rec
  - reason_code_id
  - created_ts
  - created_user_id
- - 
+
 Say, for example, that you only wanted to find records from a specific location, you could include that filter in the URL of the GET request like so:
 
 GET ```/v2/deviceterms?location_id=XXXXXXXXX```
