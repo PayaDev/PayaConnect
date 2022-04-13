@@ -2,7 +2,7 @@
 
 The router accountvault endpoint is used to store cards when the merchant has a terminal. This allows for the storing of cards using the terminal without first having to run a transaction.
 
-By using a terminal router, the process to store a card with a terminal is now down to one step. Simply send the request to the /v2/routeraccountvaults endpoint and the API does the rest. The https request will need to remain open for up to 300 seconds while the terminal is processing the request. Once the terminal has completed processing the request, the router accountvault request will then return the response data.
+By using a terminal router, the process to store a card with a terminal is now down to one step. Simply send the request to the ```/v2/routeraccountvaults``` endpoint and the API does the rest. The https request will need to remain open for up to 300 seconds while the terminal is processing the request. Once the terminal has completed processing the request, the router accountvault request will then return the response data.
 
 ## Endpoint Actions
 
