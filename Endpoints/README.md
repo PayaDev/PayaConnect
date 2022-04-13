@@ -100,7 +100,7 @@ Below you will find a list of all our Endpoints.  You can click on any of the sp
 * [Post Back Configs](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/Postback)
 * [Quick Invoices](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/Quick%20Invoice)
 * [Recurrings](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/Recurrings)
-* [Router Account Vaults]()
+* [Router Account Vaults](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/Router%20Account%20Vaults%20Endpoint)
 * [Router Transactions](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/Router%20Transactions)
 * [Signatures](https://github.com/kcskw/PayaConnect/tree/patch-1/Endpoints/Signatures)
 * [Tags]()
