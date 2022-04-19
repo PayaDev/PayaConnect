@@ -24,27 +24,27 @@ _**Note**: It may be useful to include ```sort=-created_ts``` as a query string 
 {
   "transactionbatches": [
     {
-      "id": "11ex83jf7skd04fxxxbd0efc",
+      "id": "{transactionbatches_id}",
       "batch_num": 3,
-      "product_transaction_id": "11e85xx83gh75js8863c14ea",
+      "product_transaction_id": "{product_transaction_id}",
       "created_ts": 1526051483,
       "processing_status_id": 1,
       "is_open": 1,
       "batch_close_ts": null
     },
     {
-      "id": "11e85xx883ng0sdaac9814db",
+      "id": "{transactionbatches_id}",
       "batch_num": 2,
-      "product_transaction_id": "11e855xx93jf03jd863c14ea",
+      "product_transaction_id": "{product_transaction_id}",
       "created_ts": 1526048228,
       "processing_status_id": 2,
       "is_open": 0,
       "batch_close_ts": 1526051458
     },
     {
-      "id": "11e85xx093jd7gj2b3eff99b",
+      "id": "{transactionbatches_id}",
       "batch_num": 1,
-      "product_transaction_id": "11e85fhg903jf0aklb8863c14ea",
+      "product_transaction_id": "{product_transaction_id}",
       "created_ts": 1526047654,
       "processing_status_id": 2,
       "is_open": 0,
@@ -88,8 +88,22 @@ _**Note**: It may be useful to include ```sort=-created_ts``` as a query string 
 
 ```json
 {
-    // Empty Payload - Nothing Needed Here
+  "transactionbatch": {
+      "id": "transactionbatches_id",
+      "batch_num": 3,
+      "product_transaction_id": "{product_transaction_id}",
+      "created_ts": 1526051483,
+      "processing_status_id": 1,
+      "is_open": 1,
+      "batch_close_ts": null
+    }
 }
+```
+
+#### Get Specific Transaction Batch
+
+```json
+
 ```
 
 #### Processing Status Ids
