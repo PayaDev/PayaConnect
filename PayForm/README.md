@@ -74,6 +74,8 @@ In addition to the fields that can be supplied in the Transactions Endpoint, the
 | show_cvv |	boolean | |	true/false or 1/0	By default it is true, can be set it to false in the data. |
 | stylesheet_url |	string |	256 |	API loads the default one, can be overridden with the file that is sent in the data. Should be full url, ie. https://example.com/stylsheet.css |
 | parent_send_message |	boolean | |	true/false or 1/0	When set to 1or true, this will allow for the JSON response from the form submission to be posted back to the parent window containing the iframe. For more info see Using postMessage. |
+| redirect_url_on_approve |  string |     256    | The page a user will get redirected to upon approval of transaction.                                                                                                             |
+| redirect_url_on_decline |  string |     256    | The page a user will get redirected to upon decline of transaction.                                                                                                              |
 
 ### Overriding the Styles for PayForm
 WIthin the optional fields described above you will notice there is a `stylesheet_url`.  This field can be used to include your own stylesheet to override the default styles already included on the page.  You can use the following link to download the latest default CSS for PayForm as a starting point for your custom stylesheet:
