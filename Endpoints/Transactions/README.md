@@ -2960,7 +2960,7 @@ In the response above you will notice that there is an "avs_enhanced" field.  Th
  
 
 ## Reason Code Details
-For a full list of all the possible reason codes that can be returned from the transaction endpoint, please see the [Response Reason Codes]() page.
+For a full list of all the possible reason codes that can be returned from the transaction endpoint, please see the [Response Reason Codes](https://github.com/PayaDev/PayaConnect/blob/master/Response%20Reason%20Codes.md) page.
 
  
 
