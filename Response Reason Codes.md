@@ -2,82 +2,118 @@
 Below is a listing of reason codes that may be returned from the API. You will notice there is a numbering scheme to assist you in determining if a transaction was successful.
 
 ## API Listing
-| Code | Description                                                |
-|------|------------------------------------------------------------|
-| 0    | N/A                                                        |
-| 1000 | CC - Approved                                              |
-| 1000 | ACH - Accepted                                             |
-| 1001 | AuthCompleted                                              |
-| 1002 | Forced                                                     |
-| 1003 | AuthOnly Declined                                          |
-| 1004 | Validation Failure (System Run Trx)                        |
-| 1005 | Processor Response Invalid                                 |
-| 1200 | Voided                                                     |
-| 1201 | Partial Approval                                           |
-| 1500 | Generic Decline                                            |
-| 1510 | Call                                                       |
-| 1518 | Transaction Not Permitted - Terminal                       |
-| 1520 | Pickup Card                                                |
-| 1530 | Retry Trx                                                  |
-| 1531 | Communication Error                                        |
-| 1540 | Setup Issue, contact Support                               |
-| 1541 | Device is not signature capable                            |
-| 1588 | Data could not be de-tokenized                             |
-| 1599 | Other Reason                                               |
-| 1601 | Generic Decline                                            |
-| 1602 | Call                                                       |
-| 1603 | No Reply                                                   |
-| 1604 | Pickup Card - No Fraud                                     |
-| 1605 | Pickup Card - Fraud                                        |
-| 1606 | Pickup Card - Lost                                         |
-| 1607 | Pickup Card - Stolen                                       |
-| 1608 | Account Error                                              |
-| 1609 | Already Reversed                                           |
-| 1610 | Bad PIN                                                    |
-| 1611 | Cashback Exceeded                                          |
-| 1612 | Cashback Not Available                                     |
-| 1613 | CID Error                                                  |
-| 1614 | Date Error                                                 |
-| 1615 | Do Not Honor                                               |
-| 1616 | NSF                                                        |
-| 1617 | Exceeded Withdrawal Limit                                  |
-| 1618 | Invalid Service Code                                       |
-| 1619 | Exceeded activity limit                                    |
-| 1620 | Violation                                                  |
-| 1621 | Encryption Error                                           |
-| 1622 | Card Expired                                               |
-| 1623 | Renter                                                     |
-| 1624 | Security Violation                                         |
-| 1625 | Card Not Permitted                                         |
-| 1626 | Trans Not Permitted                                        |
-| 1627 | System Error                                               |
-| 1628 | Bad Merchant ID                                            |
-| 1629 | Duplicate Batch (Already Closed)                           |
-| 1630 | Batch Rejected                                             |
-| 1631 | Account Closed                                             |
-| 1650 | Contact Support                                            |
-| 1651 | Max Sending - Throttle Limit Hit (ACH only)                |
-| 1652 | Max Attempts Exceeded                                      |
-| 1653 | Contact Support                                            |
-| 1654 | Voided - Online Reversal Failed                            |
-| 1655 | Decline (AVS Auto Reversal)                                |
-| 1656 | Decline (CVV Auto Reversal)                                |
-| 1657 | Decline (Partial Auth Auto Reversal)                       |
-| 1658 | Expired Authorization                                      |
-| 1659 | Declined - Partial Approval not Supported                  |
-| 1660 | Bank Account Error, please delete and re-add Account Vault |
-| 1661 | Declined AuthIncrement                                     |
-| 1662 | Auto Reversal - Processor can't settle                     |
-| 1663 | Manager Needed (Needs override transaction)                |
-| 1664 | Account Vault Not Found: Sharing Group Unavailable         |
-| 1665 | Contact Not Found: Sharing Group Unavailable               |
-| 1701 | Chip Reject                                                |
-| 1800 | Incorrect CVV                                              |
-| 1801 | Duplicate Transaction                                      |
-| 1802 | MID/TID Not Registered                                     |
-| 1803 | Stop Recurring                                             |
-| 1804 | No Transactions in Batch                                   |
-| 1805 | Batch Does Not Exist                                       |
+| PAYA   Code  (reason_code_id) | TSYS Code |                             Response Message                             |
+|:-----------------------------:|:---------:|:------------------------------------------------------------------------:|
+|              1000             |    "00"   | Approved and complete                                                    |
+|              1000             |     85    | No reason to decline                                                     |
+|              1000             |    N/A    | ACH - Accepted                                                           |
+|              1000             |     T0    | First check OK and has been converted                                    |
+|              1001             |    N/A    | AuthCompleted                                                            |
+|              1002             |    N/A    | Forced                                                                   |
+|              1003             |    N/A    | AuthOnly Declined                                                        |
+|              1004             |    N/A    | Validation Failure (System Run Trx)                                      |
+|              1005             |    N/A    | Processor Response Invalid                                               |
+|              1200             |    N/A    | Voided                                                                   |
+|              1201             |    N/A    | Partial Approval                                                         |
+|              1500             |    "05"   | Do not honor                                                             |
+|              1500             |    "06"   | General Error                                                            |
+|              1500             |     51    | Insufficient funds                                                       |
+|              1500             |     61    | Exceeds withdrawal limit                                                 |
+|              1500             |     62    | Invalid service code restricted                                          |
+|              1500             |     65    | Activity limit exceeded                                                  |
+|              1500             |     93    | Violation, cannot complete                                               |
+|              1500             |     N4    | Exceeds issuer withdrawal limit                                          |
+|              1510             |    "01"   | Refer to issuer                                                          |
+|              1510             |    "02"   | Refer to issuer-Special   condition                                      |
+|              1518             |     58    | Transaction not   permittedTerminal                                      |
+|              1520             |    "04"   | Pick up card (no fraud)                                                  |
+|              1520             |    "07"   | Pick up card, special condition   (fraud account)                        |
+|              1520             |     41    | Lost card, pick up (fraud account)                                       |
+|              1520             |     43    | Stolen card, pick up (fraud account)                                     |
+|              1530             |     19    | Re-enter transaction                                                     |
+|              1531             |    N/A    | Communication Error                                                      |
+|              1540             |    N/A    | Setup Issue, contact Support                                             |
+|              1541             |    N/A    | Device is not signature capable                                          |
+|              1588             |    N/A    | Data could not be de-tokenized                                           |
+|              1599             |     13    | Invalid amount                                                           |
+|              1599             |     15    | No such issuer                                                           |
+|              1599             |     21    | Unable to back out transaction                                           |
+|              1599             |     52    | No checking account                                                      |
+|              1599             |     53    | No savings account                                                       |
+|              1599             |     HV    | Hierarchy Verification Error                                             |
+|              1599             |     T1    | Check is OK but cannot be converted. This is a declined transaction      |
+|              1599             |     T2    | Invalid ABA number, not an ACH participant                               |
+|              1601             |    N/A    | Generic Decline                                                          |
+|              1602             |    N/A    | Call                                                                     |
+|              1603             |     28    | File is temporarily unavailable                                          |
+|              1603             |     91    | Issuer or switch is unavailable                                          |
+|              1604             |    N/A    | Pickup Card - No Fraud                                                   |
+|              1605             |    N/A    | Pickup Card - Fraud                                                      |
+|              1606             |    N/A    | Pickup Card - Lost                                                       |
+|              1607             |    N/A    | Pickup Card - Stolen                                                     |
+|              1608             |     14    | Invalid card number                                                      |
+|              1608             |     39    | No credit account                                                        |
+|              1608             |     78    | No account                                                               |
+|              1608             |     EA    | Verification error                                                       |
+|              1608             |     EB    | Verification error                                                       |
+|              1608             |     EC    | Verification error                                                       |
+|              1608             |     T6    | MICR Error                                                               |
+|              1609             |     79    | Already reversed at switch                                               |
+|              1610             |     55    | Incorrect PIN                                                            |
+|              1611             |    N/A    | Cashback Exceeded                                                        |
+|              1612             |    N/A    | Cashback Not Available                                                   |
+|              1613             |    N/A    | CID Error                                                                |
+|              1614             |    N/A    | Date Error                                                               |
+|              1615             |    N/A    | Do Not Honor                                                             |
+|              1616             |    N/A    | NSF                                                                      |
+|              1617             |    N/A    | Exceeded Withdrawal Limit                                                |
+|              1618             |     57    | Transaction not permittedCard                                            |
+|              1619             |     T3    | Amount greater than limit                                                |
+|              1620             |     T4    | Unpaid items, failed negative   file check                               |
+|              1621             |     81    | Cryptographic error                                                      |
+|              1621             |     83    | Cannot verify PIN                                                        |
+|              1621             |     86    | Cannot verify PIN                                                        |
+|              1622             |     54    | Expired card                                                             |
+|              1623             |    N/A    | Renter                                                                   |
+|              1624             |     75    | PIN tries exceeded                                                       |
+|              1625             |     CV    | Card Type Verification Error                                             |
+|              1626             |     12    | Invalid transaction                                                      |
+|              1626             |     76    | Unable to location, no match                                             |
+|              1626             |     77    | Inconsistent data, rev., or repeat                                       |
+|              1626             |     80    | Invalid date                                                             |
+|              1626             |     N3    | Cash back service not available                                          |
+|              1627             |     96    | System malfunction                                                       |
+|              1628             |    "03"   | Invalid Merchant ID                                                      |
+|              1628             |     92    | Destination not found                                                    |
+|              1629             |    N/A    | Duplicate Batch (Already Closed)                                         |
+|              1630             |    N/A    | Batch Rejected                                                           |
+|              1631             |    N/A    | Account Closed                                                           |
+|              1650             |    N/A    | Contact Support                                                          |
+|              1651             |    N/A    | Max Sending - Throttle Limit Hit (ACH only)                              |
+|              1652             |    N/A    | Max Attempts Exceeded                                                    |
+|              1653             |    N/A    | Contact Support                                                          |
+|              1654             |    N/A    | Voided - Online Reversal Failed                                          |
+|              1655             |    N/A    | Decline (AVS Auto Reversal)                                              |
+|              1656             |    N/A    | Decline (CVV Auto Reversal)                                              |
+|              1657             |    N/A    | Decline (Partial Auth Auto Reversal)                                     |
+|              1658             |    N/A    | Expired Authorization                                                    |
+|              1659             |    N/A    | Declined - Partial Approval not Supported                                |
+|              1660             |    N/A    | Bank Account Error, please delete and re-add Account Vault               |
+|              1661             |    N/A    | Declined AuthIncrement                                                   |
+|              1662             |    N/A    | Auto Reversal - Processor can't settle                                   |
+|              1663             |    N/A    | Manager Needed (Needs override transaction)                              |
+|              1664             |    N/A    | Account Vault Not Found: Sharing Group Unavailable                       |
+|              1665             |    N/A    | Contact Not Found: Sharing Group Unavailable                             |
+|              1701             |    N/A    | Chip Reject                                                              |
+|              1800             |     82    | Cash back limit exceeded                                                 |
+|              1800             |     N7    | CVV2 Value supplied is invalid                                           |
+|              1801             |     94    | Unable to locate, no match                                               |
+|              1801             |     T5    | Duplicate check number                                                   |
+|              1802             |    N/A    | MID/TID Not Registered                                                   |
+|              1803             |     R0    | Customer requested stop of specific recurring payment                    |
+|              1803             |     R1    | Customer requested stop of all recurring payments from specific merchant |
+|              1804             |    N/A    | No Transactions in Batch                                                 |
+|              1805             |    N/A    | Batch Does Not Exist                                                     |
 
 ### ACH Reject Reason Codes
 
