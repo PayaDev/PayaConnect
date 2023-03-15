@@ -1,5 +1,5 @@
 # Response Reason Codes
-Below is a listing of reason codes that may be returned from the API. You will notice there is a numbering scheme to assist you in determining if a transaction was successful.
+Below is a listing of reason codes that may be returned from the API. You will notice there is a numbering scheme to assist you in determining if a transaction was successful. The codes beliow will appear in your reason_code_id field to offer additional details for transaction status. 
 
 ## API Listing
 | PAYA   Code  (reason_code_id) | TSYS Code |                             Response Message                             |
