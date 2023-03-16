@@ -57,25 +57,24 @@ If you are using `"payment_method": "ach"`, you must provide a `product_transact
 
 ### Optional Fields
 Any field from the Transactions Endpoint can be passed in the JSON above for use with the transaction that will be created when the PayForm is submitted.  For example, `"save_account": 1` can be added so that an Account Vault is created with the payment information provided for the transaction. 
-
+ACH Payment Method will offer the option field of show_second_account_number allowing an additional bank account number field to be presented for users to confirm their bank account number. 
 In addition to the fields that can be supplied in the Transactions Endpoint, the following can be supplied to control the final outcome of the PayForm:
 
-| Field Name | Type | Max Length | Description |
-| --- | --- | --- | --- |
-| parent_close | boolean | | If set as true, it will close the payment form after transaction is made. |
-| parent_close_delay	| integer	| |	defaults to 10 sec, only if parent_close=true. Can be sent in the data with different delay timing. |
-| display_close_button |	boolean	 | | By default this field is set to true. If you don’t want to display the “close” button, submit it as false in the data. |
-| entry_method	| string | 8 | The option to send for method of processing transaction. This field is optional, but if supplied must be one of "manual", "terminal", or "both". |
-| show_account_holder_name |	boolean | |	true/false or 1/0	By default it is true, can be set to false in data for not displaying “Account Holder Name” in Account Storage Form widget.|
-| show_street |	boolean | |	true/false or 1/0	This field is set to true if product transaction has vt_show_street set to true. |
-| show_zip |	boolean | |	true/false or 1/0	This field is set to true if product transaction has vt_show_zip set to true. |
-| require_street |	boolean | |	true/false or 1/0	This field is set to true if product transaction has vt_require_street set to true. |
-| require_zip |	boolean | |	true/false or 1/0	This field is set to true if product transaction has vt_require_zip set to true. |
-| show_cvv |	boolean | |	true/false or 1/0	By default it is true, can be set it to false in the data. |
-| stylesheet_url |	string |	256 |	API loads the default one, can be overridden with the file that is sent in the data. Should be full url, ie. https://example.com/stylsheet.css |
-| parent_send_message |	boolean | |	true/false or 1/0	When set to 1or true, this will allow for the JSON response from the form submission to be posted back to the parent window containing the iframe. For more info see Using postMessage. |
-| redirect_url_on_approve |  string |     256    | The page a user will get redirected to upon approval of transaction.                                                                                                             |
-| redirect_url_on_decline |  string |     256    | The page a user will get redirected to upon decline of transaction.                                                                                                              |
+| Field   Name               | Type    | Max Length        | Description                                                                                                                                                                                   |
+|----------------------------|---------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| parent_close               | boolean |                   | If set as true, it will   close the payment form after transaction is made.                                                                                                                   |
+| parent_close_delay         | integer |                   | defaults to 10 sec, only if   parent_close=true. Can be sent in the data with different delay timing.                                                                                         |
+| display_close_button       | boolean |                   | By default this field is   set to true. If you don’t want to display the “close” button, submit it as   false in the data.                                                                    |
+| entry_method               | string  | 8                 | The option to send for   method of processing transaction. This field is optional, but if supplied   must be one of "manual", "terminal", or "both".                                          |
+| show_account_holder_name   | boolean | true/false or 1/0 | By default it is true, can   be set to false in data for not displaying “Account Holder Name” in Account   Storage Form widget.                                                               |
+| show_street                | boolean | true/false or 1/0 | This field is set to true   if product transaction has vt_show_street set to true.                                                                                                            |
+| show_zip                   | boolean | true/false or 1/0 | This field is set to true   if product transaction has vt_show_zip set to true.                                                                                                               |
+| require_street             | boolean | true/false or 1/0 | This field is set to true   if product transaction has vt_require_street set to true.                                                                                                         |
+| require_zip                | boolean | true/false or 1/0 | This field is set to true   if product transaction has vt_require_zip set to true.                                                                                                            |
+| show_cvv                   | boolean | true/false or 1/0 | By default it is true, can   be set it to false in the data.                                                                                                                                  |
+| show_second_account_number | boolean | true/false or 1/0 | Presents a second account number   field that makes the account holder enter their account number twice and   confirm that the information entered is matching.                               |
+| stylesheet_url             | string  | 256               | API loads the default   one, can be overridden with the file that is sent in the data. Should be   full url, ie. https://example.com/stylsheet.css                                            |
+| parent_send_message        | boolean | true/false or 1/0 | When set to   1or true, this will allow for the JSON response from the form submission to   be posted back to the parent window containing the iframe. For more info   see [Using postMessage](https://docs.payaconnect.com/developers/api/post-message). |
 
 ### Overriding the Styles for PayForm
 WIthin the optional fields described above you will notice there is a `stylesheet_url`.  This field can be used to include your own stylesheet to override the default styles already included on the page.  You can use the following link to download the latest default CSS for PayForm as a starting point for your custom stylesheet:
