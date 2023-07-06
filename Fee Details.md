@@ -13,9 +13,10 @@ As part of card brand rules merchants are allowed to apply certain fees to a tra
 A surcharge is an additional fee that merchants can tack onto a customer's transaction to cover the costs of credit card processing. Most merchants absorb these fees that are passed on to them from credit cards, but you, the Partner, can implement a surcharge where customers can pay for the convenience of using their credit card(s) (this is not to be confused with convenience fees).
 Surcharges are defined as a merchant's solution in supplying a transaction amount to Paya's Gateway that already includes the surcharge as part of the total. A good example of this is when a customer sees a $100 + $2 (surcharge), but we charge the card $102; the merchant would receive a deposit of $102. Please keep in mind that the surcharge can be either a fixed rate or a percentage. 
 
-### Debit Cards
-Paya Connect reviews the BIN data for both new and tokenized payment cards to determine if the card type is Debit or Credit; if the BIN is returned as a debit card type then the transaction model will automatically remove the surcharge from the transaction request and update the transaction amount field to reflect the subtotal and any other qualified amounts.  
-This setting is managed by our SDKSupport team for Paya Connect Developer Portal and Sandbox.
+>### Debit Cards
+>Paya Connect reviews the BIN data for both new and tokenized payment cards to determine if the card type is Debit or Credit; if the BIN is returned as a debit card type then the transaction model will automatically remove the surcharge from the transaction request and update the transaction amount field to reflect the subtotal and any other qualified amounts.  
+
+_*Note: This setting is managed by our SDKSupport team for Paya Connect Developer Portal and Sandbox.*_
 
 _Please review the Do's and Don'ts of convenience fees noted below:_
 
