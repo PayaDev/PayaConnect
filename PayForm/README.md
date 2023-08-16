@@ -57,7 +57,7 @@ If you are using `"payment_method": "ach"`, you must provide a `product_transact
 
 #### Processing for Canadian Merchants:
 
-**Required fields** to submit with Payform are, field name "Locale" value "en_CA" to indicate "English Canada" in order to enable Canadian-specific labels. Example: `"locale": en_CA`. You will also need to required billing state to reference the providence. Example: `"billing_state": [providence name]`.
+**Required fields** to submit with PayForm are, field name "Locale" value "en_CA" to indicate "English Canada" in order to enable Canadian-specific labels. Example: `"locale": en_CA`. You will also need to required billing state to reference the providence. Example: `"billing_state": [providence name]`.
 
 ### Optional Fields
 Any field from the Transactions Endpoint can be passed in the JSON above for use with the transaction that will be created when the PayForm is submitted.  For example, `"save_account": 1` can be added so that an Account Vault is created with the payment information provided for the transaction. 
