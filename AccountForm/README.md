@@ -52,6 +52,10 @@ Below you will see examples of a data JSON object for AccountForm.  These reques
     }
 }
 ```
+####Processing for Canadian Merchants:
+
+**Required fields** to submit with AccountForm are, field name "Locale" value "en_CA" to indicate "English Canada" in order to enable Canadian-specific labels. Example: `"locale": en_CA`. You will also need to required billing state to reference the providence. Example: `"billing_state": [providence name]`.
+
 ### Optional Fields
 Any field from the AccountVaults Endpoint can be passed in the JSON above for use with the vault record that will be created when the AccountForm is submitted.
 
