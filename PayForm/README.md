@@ -55,6 +55,10 @@ Below you will see examples of a data JSON object for PayForm.  These requests a
 ### Important
 If you are using `"payment_method": "ach"`, you must provide a `product_transaction_id` for a Service that supports ACH transactions.
 
+#### Processing for Canadian Merchants:
+
+**Required fields** to submit with PayForm are, field name "Locale" value "en_CA" to indicate "English Canada" in order to enable Canadian-specific labels. Example: `"locale": en_CA`. You will also need to required billing state to reference the providence. Example: `"billing_state": [providence name]`.
+
 ### Optional Fields
 Any field from the Transactions Endpoint can be passed in the JSON above for use with the transaction that will be created when the PayForm is submitted.  For example, `"save_account": 1` can be added so that an Account Vault is created with the payment information provided for the transaction. 
 ACH Payment Method will offer the option field of show_second_account_number allowing an additional bank account number field to be presented for users to confirm their bank account number. 
