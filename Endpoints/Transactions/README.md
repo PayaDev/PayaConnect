@@ -2536,7 +2536,7 @@ Request
 
 ##Filters
 
-In contrary to using expands to get extra data, you can use filters to limit record results. Most fields listed in the fields section can be used to filter results.
+While Expands will provide extra data, you can use filters to limit record results. Most fields listed in the fields section can be used to filter results.
 
 Say, for example, that you only wanted to find transactions where the last four digits of the card were 1234. You could include that filter in the URL of the GET request like so:
 
