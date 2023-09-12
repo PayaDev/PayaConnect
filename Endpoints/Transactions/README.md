@@ -2534,7 +2534,7 @@ Request
 ```
  
 
-##Filters
+## Filters
 
 In contrary to using expands to get extra data, you can use filters to limit record results. Most fields listed in the fields section can be used to filter results.
 
@@ -2858,6 +2858,7 @@ The status_id field details the current status of the transaction. This is a rea
 | 132       | Credit/Debit/Refund | Originating                                                                           |
 | 133       | Credit/Debit/Refund | Originated                                                                            |
 | 134       | Credit/Debit/Refund | Settled                                                                               |
+| 136       | Debit               | Reserved                                                                              |
 | 191       | Settle              | Settled (depracated - batches are now settled on the /v2/transactionbatches endpoint) |
 | 201       | All                 | Voided                                                                                |
 | 301       | All                 | Declined                                                                              |
