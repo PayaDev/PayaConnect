@@ -92,7 +92,7 @@ Definitions
 | save_account_title              | string     |     | 16    |               | ✔            |             |      | If saving account vault while running a transaction, this will be the title of the account vault.                                                                                                                                                                                                                                                                                                          |
 | settle_date                     | yyyy-mm-dd |     | 10    |               |              |             |      | Settle date                                                                                                                                                                                                                                                                                                                                                                                                |
 | ssn4                            | string     | 4   | 4     |               | ✔            |             |      | For ACH transactions where Identity Verification is enabled for terminal. Only ssn4 or dob_year should be passed. not both.                                                                                                                                                                                                                                                                                |
-| status_id                       | number     |     | 3     |               |              |             |      | Status ID - See status id section for more detail                                                                                                                                                                                                                                                                                                                                                          |
+| status_id                       | number     |     | 3     |               |              |             |      | Status ID - See [Status ID section](https://github.com/PayaDev/PayaConnect/tree/master/Endpoints/Transactions#status-id-details) for more detail                                                                                                                                                                                                                                                                                                                                                          |
 | subtotal_amount                 | number     |     | 10    |               | ✔            |             |      | This field is allowed and required for transactions that have a product where surcharge is configured.                                                                                                                                                                                                                                                                                                     |
 | surcharge_amount                | number     |     | 10    |               | ✔            |             |      | This field is allowed and required for transactions that have a product where surcharge is configured.                                                                                                                                                                                                                                                                                                     |
 | tags                            | string     |     |       |               | ✔            | ✔           | O    |                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -2534,9 +2534,9 @@ Request
 ```
  
 
-##Filters
+## Filters
 
-In contrary to using expands to get extra data, you can use filters to limit record results. Most fields listed in the fields section can be used to filter results.
+While Expands will provide extra data, you can use filters to limit record results. Most fields listed in the fields section can be used to filter results.
 
 Say, for example, that you only wanted to find transactions where the last four digits of the card were 1234. You could include that filter in the URL of the GET request like so:
 
@@ -2858,6 +2858,7 @@ The status_id field details the current status of the transaction. This is a rea
 | 132       | Credit/Debit/Refund | Originating                                                                           |
 | 133       | Credit/Debit/Refund | Originated                                                                            |
 | 134       | Credit/Debit/Refund | Settled                                                                               |
+| 136       | Debit               | Reserved                                                                              |
 | 191       | Settle              | Settled (depracated - batches are now settled on the /v2/transactionbatches endpoint) |
 | 201       | All                 | Voided                                                                                |
 | 301       | All                 | Declined                                                                              |
