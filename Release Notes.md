@@ -1,4 +1,15 @@
 # Release Notes
+
+ ## Version 
+**Sandbox Release Date:** November 2<sup>nd</sup> 2023
+
+**Production Release Date:** November 15<sup>th</sup> 2023
+- Minor UI issue resolved for "Refund Transaction">"Available to Refund" not displaying correctly.
+- Corrected API response for non-Level 3 Transaction IDs to the TransactionLevel3s Endpoint. Now returns proper 422 error response.
+- Corrected AVS responses using address within Test Data
+- Corrected issue with blind bankcard refunds causing 500 error response. These should now process the refund as expected.
+- Updates to the SSL certificates.
+
  ## Version 
 **Sandbox Release Date:** September 25<sup>th</sup> 2023
 
