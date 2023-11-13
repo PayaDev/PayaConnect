@@ -265,7 +265,7 @@ If there is a requirement to run transactions that are a different action from t
 
 ### Surcharge/Convenience Fee(s)
 
-You can now add a surcharge or convenience fee to your HPP. Please contact SDK Support (sdksupport@paya.com) in order to add the fee service to your sandbox project/location. Once configured, the additional fee will be calculated and displayed within the HPP attached to the service.
+You can now add a surcharge or convenience fee to your HPP. Please contact SDK Support (sdksupport@nuvei.com) in order to add the fee service to your sandbox project/location. Once configured, the additional fee will be calculated and displayed within the HPP attached to the service.
 
 ![image](https://user-images.githubusercontent.com/11508367/154725921-751a2942-bcf4-4591-a4fe-e01a60b9c22c.png)
 ![image](https://user-images.githubusercontent.com/11508367/154725768-a28b110b-199e-4a0e-bcb4-2bd4233ec328.png)
