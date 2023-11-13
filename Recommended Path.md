@@ -1207,4 +1207,4 @@ This uses a transaction_id from a previous debit request to perform the refund (
 
 ## Summary
 
-While the examples provided are available to get you started with your integration. Please keep in mind that this is a basic method of integration to be used as a guide. Should you have any questions relating to your integration, please reach out to the SDK Team at [sdksupport@paya.com](mailto:sdksupport@paya.com).
+While the examples provided are available to get you started with your integration. Please keep in mind that this is a basic method of integration to be used as a guide. Should you have any questions relating to your integration, please reach out to the SDK Team at [sdksupport@nuvei.com](mailto:sdksupport@nuvei.com).
