@@ -31,7 +31,7 @@ public class Main {
 	  try {
 
 		//Set Variables
-    //Sandbox IDs and Keys may be obtained by contacting sdksupport@paya.com
+    //Sandbox IDs and Keys may be obtained by contacting sdksupport@nuvei.com
 		String locationID = "[Location ID]";
 		String userID = "[User ID]";
 		String userAPIKey = "[User API Key]";
