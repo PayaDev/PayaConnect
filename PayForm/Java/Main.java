@@ -1,7 +1,7 @@
 // /*----------------------------------------------
 // Author: SDK Support Group
 // Company: Paya
-// Contact: sdksupport@paya.com
+// Contact: sdksupport@nuvei.com
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // !!! Samples intended for educational use only!!!
 // !!!        Not intended for production       !!!
@@ -31,7 +31,7 @@ class Main {
     // Test credentials are provided when you register at
     // https://developer.sandbox.payaconnect.com/users/register
     // If you have any questions feel free to reach out
-    // to us directly at sdksupport@paya.com 
+    // to us directly at sdksupport@nuvei.com 
     String developerID = "[Developer ID]";
     String userID = "[User ID]";
     String userHashKey = "[User Hash Key]";
