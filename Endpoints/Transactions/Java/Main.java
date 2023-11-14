@@ -1,7 +1,7 @@
 ///*----------------------------------------------
 //Author: Thomas Hagan
 //Company: Paya
-//Contact: sdksupport@paya.com
+//Contact: sdksupport@nuvei.com
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //!!! Samples intended for educational use only!!!
 //!!!        Not intended for production       !!!
