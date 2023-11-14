@@ -69,7 +69,7 @@ Once the implementation is complete, we have a brief certification process:
 * **HOSTED SOLUTIONS (HOSTED PAYMENT PAGE, ACCOUNTFORM, PAYFORM)**
 Reach out to us at sdksupport@nuvei.com to schedule your certification call. During the call we’ll make sure transaction data is passing correctly and properly formatted.
 * **NON-HOSTED SOLUTION (DIRECT INTEGRATION)**
-Email sdksupport@paya.com a copy of your PCI/PA-DSS certificate from an [Approved Scanning Vendor (ASV)](https://www.pcisecuritystandards.org/assessors_and_solutions/approved_scanning_vendors). Once we review your certificate we’ll provide a link to setup your certification call. During the call we’ll make sure transaction data is passing correctly and properly formatted.
+Email sdksupport@nuvei.com a copy of your PCI/PA-DSS certificate from an [Approved Scanning Vendor (ASV)](https://www.pcisecuritystandards.org/assessors_and_solutions/approved_scanning_vendors). Once we review your certificate we’ll provide a link to setup your certification call. During the call we’ll make sure transaction data is passing correctly and properly formatted.
 
 Note: *Using tokenized transaction data or EMV/P2PE devices may alter PCI scope for Non-Hosted Solutions.*
 
