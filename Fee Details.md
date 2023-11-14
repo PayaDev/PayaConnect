@@ -49,4 +49,4 @@ Please review the Do's and Don'ts of convenience fees noted below:
 *	A convenience fee cannot be used if you use surcharging (it must be one or the other and cannot be both).  
 *	Customer's must-have online (Card Not Present (CNP)) and retail (Card Present) presence. 
 *	Cannot be charged on recurring or installment transactions or CP (Card Present) environments. 
-If you are interested in setting up convenience fees, please reach out to your assigned Partner Rep. If you do not know who your assigned Partner Rep is, please reach out to our Partner Support Team - PartnerSupport@paya.com
+If you are interested in setting up convenience fees, please reach out to your assigned Partner Rep. If you do not know who your assigned Partner Rep is, please reach out to our Partner Support Team - PartnerSupport@nuvei.com
