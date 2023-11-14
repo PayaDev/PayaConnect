@@ -28,7 +28,7 @@ requests_log.setLevel(logging.DEBUG)
 requests_log.propagate = True
 
 # The Location ID is the primary account ID for Paya Connect. Please check with
-# sdksupport@paya.com for registration and test account information. The Terminal
+# sdksupport@nuvei.com for registration and test account information. The Terminal
 # ID will be found under the Terminals tab within your developer portal account project
 PAYA_LOCATION_ID = '[Location ID]'
 PAYA_TERMINAL_ID = '[Terminal ID]'
