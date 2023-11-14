@@ -215,4 +215,4 @@ Once the process is complete, the iframe may either automatically close the wind
 
 ### If you have any question please reach out to our team.
 * Full Documentation: https://docs.payaconnect.com/developers
-* Integration Support Team: sdksupport@paya.com
+* Integration Support Team: sdksupport@nuvei.com
