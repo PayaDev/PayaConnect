@@ -48,7 +48,7 @@ Contact: sdksupport@nuvei.com
             "account_holder_name" => "john smith",
             "billing_street" => "123 Main St",
             "billing_zip" => "31405",
-            "entry_method" => "manual",
+            "entry_method" => "manual", // optional, but recommended, see field description.
             "show_account_holder_name" => true,
             "show_street" => true,
             "show_zip" => true,
