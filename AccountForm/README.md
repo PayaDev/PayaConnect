@@ -66,7 +66,7 @@ In addition to the fields that can be supplied in the AccountVaults Endpoint, th
 | parent_close | boolean | | If set as true, it will close the payment form after transaction is made. |
 | parent_close_delay	| integer	| |	defaults to 10 sec, only if parent_close=true. Can be sent in the data with different delay timing. |
 | display_close_button |	boolean	 | | By default this field is set to true. If you don’t want to display the “close” button, submit it as false in the data. |
-| entry_method	| string | 8 | The option to send for method of processing transaction. This field is optional, but if supplied must be one of "manual", "terminal", or "both". |
+| entry_method	| string | 8 | The option to send for method of processing transaction. This field is optional, but if supplied must be one of "manual", "terminal", or "both". The field will default based on the Product Transaction ID being used Ecommerce, Moto default = "manual". Retail, Hotel/Lodging, Food/Resturant = default "both". |
 | show_title |	boolean | | 	By default is set to true, can be set to false in data for not displaying “title” in AccountForm. |
 | show_account_holder_name |	boolean | |	true/false or 1/0	By default it is true, can be set to false in data for not displaying “Account Holder Name” in Account Storage Form widget.|
 | show_street |	boolean | |	true/false or 1/0	This field is set to true if product transaction has vt_show_street set to true. |
