@@ -1,6 +1,25 @@
 # Release Notes
 
  ## Version 
+**Sandbox Release Date:** April 10<sup>th</sup> 2024
+
+**Estimated Production Release Date:** Early May 2024
+- UI updates to support Canadian Processing and configuration.
+- UI enhancement - Transaction Details screen will display all linked refunds. This will be listed as **Refund History**.
+- API enhancement - **response_message** API response field returned from a transaction request will include the value provided by the payment processor. This value is provided to Paya Connect by the payment processor in their **status_message** field. This will help to provide more details on decline and error transactions to the end user.
+- Surcharge Compliance Enhancement - Due to a change in card brand rules, new surcharge configuration will be limited to a maximum of 3% on any surcharge transaction. Additionally, it can only be a percentage rate.
+- Internal API logging updates.
+- UI issue resolved - 500 error when attempting to resend batch close emails.
+- API issue resolved - Queries against the Transactions Endpoint utilizing **modified_ts** set to **custom** would return zero results.
+- UI issue resolved - ACH refunds from the **Refund** button on the transaction receipt modal failing with a 422 error due to a missing **ach_sec_code**.
+- UI issue resolved - ACH refunds from the **Refund** button on the transaction details screen failing with a 422 error due to a **subtotal_amount** being submitted as "NaN".
+- API issue resolved - ACH requests missing the **ach_sec_code*, a required field, were returning with the error "failure while communicating with processor". This has been changed to the error **422: ach_sec_code cannot be blank**.
+- API issue resolved - Using the terminal **isOnline** request would result in a **422** error due to a communication failure if the device is offline or not plugged in. In order to remain consistent with RESTful standards, this error code has been changed to **503**.
+- Sandbox Postback service issue resolved - Within the sandbox environment some postback requests were stuck in the **new** status. A cleanup function was updated to make sure this is no longer the case.
+- Sandbox User permission enhancement - An update to user permissions will allow our suport team to be more effective in the sandbox environment.
+- Additional security and compliance enhancements.
+ 
+ ## Version 
 **Sandbox Release Date:** November 2<sup>nd</sup> 2023
 
 **Production Release Date:** November 15<sup>th</sup> 2023
