@@ -1,7 +1,7 @@
 # Release Notes
 
  ## Version 
-**Sandbox Release Date:** April 10<sup>th</sup> 2024
+**Sandbox Release Date:** The week of April 15<sup>th</sup> 2024
 
 **Estimated Production Release Date:** Early May 2024
 - UI updates to support Canadian Processing and configuration.
