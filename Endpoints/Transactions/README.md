@@ -79,7 +79,7 @@ Definitions
 | payment_method                  | string     |     |       | ✔             | ✔            |             | N    | 'cc' or 'ach'                                                                                                                                                                                                                                                                                                                                                                                              |
 | po_number                       | string     |     | 24    |               | ✔            |             |      |  Alpha-Numeric Only, No Special Characters allowed.                                                                                                                                                                                                                                                                                                                                                        |
 | previous_transaction_id         | string     |     | 36    |               | ✔            |             | N    | previous_transaction_id is used as token to run transaction. Account details OR previous_transaction_id should be passed to run transaction.                                                                                                                                                                                                                                                               |
-| product_transaction_id          | string     |     | 36    |               | ✔            |             |      | The Product's method (cc/ach) has to match the action. If not provided, the API will use the default configured for the Location.                                                                                                                                                                                                                                                                          |
+| product_transaction_id          | string     |     | 36    |               | ✔            |             |      | The Product's method (cc/ach) has to match the action. If not provided, the API will use the default configured for the Location. Required for ACH transaction                                                                                                                                                                                                                                                                         |
 | quick_invoice_id                | string     |     | 24    |               |             | ✔           |      | Can be used to associate a transaction to a Quick Invoice.  Quick Invoice transactions will have a value for this field automatically. See Linking Transactions to Quick Invoices for more information.                                                                                                                                                                                                    |
 | reason_code_id                  | number     |     | 4     |               |              |             |      | Response reason code that provides more detail as to the result of the transaction. The reason code list can be found here: Response Reason Codes                                                                                                                                                                                                                                                          |
 | recurring_id                    | string     |     | 36    |               |              |             |      | A unique identifer used to associate a transaction with a Recurring.                                                                                                                                                                                                                                                                                                                                       |
@@ -182,7 +182,7 @@ Applicable Actions
 | payment_method                  | R    | R      | N    | N               | R        | O            | O             | R     | N         | R     | R      | N    | 'cc' or 'ach'                                                                                                                                                                                                                                                                                                                                                                                              |
 | po_number                       |      |        |      |                 |          |              |               |       |           |       |        |      |                                                                                                                                                                                                                                                                                                                                                                                                            |
 | previous_transaction_id         | C    | C      | N    | N               | C        | N            | N             | C     | N         | C     | C      | N    | previous_transaction_id is used as token to run transaction. Account details OR previous_transaction_id should be passed to run transaction.                                                                                                                                                                                                                                                               |
-| product_transaction_id          |      |        |      |                 |          |              |               |       |           |       |        |      | The Product's method (cc/ach) has to match the action. If not provided, the API will use the default configured for the Location.                                                                                                                                                                                                                                                                          |
+| product_transaction_id          |      |        |      |                 |          |              |               |       |           |       |        |      | The Product's method (cc/ach) has to match the action. If not provided, the API will use the default configured for the Location. Required for ACH transaction                                                                                                                                                                                                                                                                         |
 | quick_invoice_id                |      |        |      |                 |          |              |               |       |           |       |        |      | Can be used to associate a transaction to a Quick Invoice.  Quick Invoice transactions will have a value for this field automatically. See Linking Transactions to Quick Invoices for more information.                                                                                                                                                                                                    |
 | reason_code_id                  |      |        |      |                 |          |              |               |       |           |       |        |      | Response reason code that provides more detail as to the result of the transaction. The reason code list can be found here: Response Reason Codes                                                                                                                                                                                                                                                          |
 | recurring_id                    |      |        |      |                 |          |              |               |       |           |       |        |      | A unique identifer used to associate a transaction with a Recurring.                                                                                                                                                                                                                                                                                                                                       |
@@ -1418,121 +1418,6 @@ For more information on BIN Info including the purpose of each field returned an
 
 `GET /v2/transactions/{id}/bininfo`
 
-Request
-```json
-{
-  "transaction": {
-    "action": "debit",
-    "payment_method": "ach",
-    "transaction_amount": "10.00",
-    "product_transaction_id": "22222-22222-22222-22222",
-    "location_id": "11111-11111-11111-11111",
-    "ach_sec_code": "WEB",
-    "account_holder_name": "Test Account",
-    "account_type": "checking",
-    "account_number": "01234567890",
-    "routing": "072000326",
-    "billing_zip": "30346",
-    "billing_street": "123 Main St",
-    "billing_city": "Atlanta",
-    "billing_state": "GA",
-    "billing_phone": "7894561230",
-    "dob_year": "1990",
-    "ssn4": "1234",
-    "dl_number": "012345678",
-    "dl_state": "GA"
-  }
-}
-
-```
-
-Response
-```json
-{
-  "transaction": {
-    "id": "11eb8bd6c1c86b7e89868db3",
-    "payment_method": "ach",
-    "account_vault_id": null,
-    "recurring_id": null,
-    "first_six": null,
-    "last_four": "7890",
-    "account_holder_name": "Test Account",
-    "transaction_amount": "10.00",
-    "description": null,
-    "transaction_code": null,
-    "avs": null,
-    "batch": null,
-    "order_num": "653743597474",
-    "verbiage": "Test 1658",
-    "transaction_settlement_status": null,
-    "effective_date": null,
-    "routing": "072000326",
-    "return_date": null,
-    "created_ts": 1616504005,
-    "modified_ts": 1616504005,
-    "transaction_api_id": null,
-    "terms_agree": null,
-    "notification_email_address": null,
-    "notification_email_sent": true,
-    "response_message": null,
-    "auth_amount": "10.00",
-    "auth_code": "AUTH NUM 272-172",
-    "status_id": 131,
-    "type_id": 50,
-    "location_id": "11111-11111-11111-11111",
-    "reason_code_id": 1000,
-    "contact_id": null,
-    "billing_zip": "30346",
-    "billing_street": "123 Main St",
-    "product_transaction_id": "22222-22222-22222-22222",
-    "tax": "0.00",
-    "customer_ip": null,
-    "customer_id": null,
-    "po_number": null,
-    "avs_enhanced": null,
-    "cvv_response": null,
-    "billing_phone": "7894561230",
-    "billing_city": "Atlanta",
-    "billing_state": "GA",
-    "clerk_number": null,
-    "created_user_id": "11e919aa3d639af2a5c5d689",
-    "modified_user_id": "11e919aa3d639af2a5c5d689",
-    "ach_identifier": null,
-    "check_number": null,
-    "settle_date": null,
-    "charge_back_date": null,
-    "void_date": null,
-    "account_type": "checking",
-    "is_recurring": false,
-    "is_accountvault": false,
-    "transaction_c1": null,
-    "transaction_c2": null,
-    "transaction_c3": null,
-    "additional_amounts": [],
-    "terminal_serial_number": null,
-    "entry_mode_id": "K",
-    "terminal_id": null,
-    "quick_invoice_id": null,
-    "ach_sec_code": "WEB",
-    "custom_data": null,
-    "hosted_payment_page_id": null,
-    "trx_source_id": 12,
-    "transaction_batch_id": null,
-    "checkin_date": null,
-    "checkout_date": null,
-    "room_num": null,
-    "room_rate": "0.00",
-    "advance_deposit": false,
-    "no_show": false,
-    "emv_receipt_data": null,
-    "_links": {
-      "self": {
-        "href": "https://api.sandbox.payaconnect.com/v2/transactions/11eb8bd6c1c86b7e89868db3"
-      }
-    }
-  }
-}
-```
  
 
 ## Paya ACH
