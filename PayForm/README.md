@@ -53,7 +53,7 @@ Below you will see examples of a data JSON object for PayForm.  These requests a
 }
 ```
 ### Important
-If you are using `"payment_method": "ach"`, you must provide a `product_transaction_id` for a Service that supports ACH transactions.
+If you are using "payment_method": "ach" you must provide a product_transaction_id for a Service that supports ACH transactions and include the corresponding ach_sec_code.
 
 #### Processing for Canadian Merchants:
 
