@@ -27,28 +27,62 @@ When utilizing a widget-style hosted payment form such as PayForm, Paya recommen
 ## 1. Preparing data for the request
 Below you will see examples of a data JSON object for PayForm.  These requests are for demonstrative purposes only and there are additional fields that can be provided that are outlined below.
 ```json
+// For Credit Card Transactions //
 {
     "transaction":{
         // Required fields
-        "payment_method": "{cc or ach}",
+        "payment_method": "cc",
         "action": "sale",
         "transaction_amount": "13.00",
+        "product_transaction_id": "1111111111111111",
         // Optional fields for the transactions endpoint
         "location_id": "1111111111111111111111111",
         "transaction_api_id": "111111111111111111111111",
         "billing_street": "43155 novi",
         "billing_zip": "12342",
         "tip_amount": "12",
-        "subtotal_amount": "13.00", // Required if surcharge_amount is included
         "surcharge_amount": "0",
-        "product_transaction_id": "1111111111111111",
         "order_num": "1234567890",
         "contact_id": "222222222222222",
         // Optional field for controling iframe behavior
         "stylesheet_url": "{full URL - i.e. https://third.party.domain/css/styles.css}",
-        "parent_close": 0,
-        "parent_close_delay": 0,
-        "display_close_button": false
+        "parent_close": true,
+        "parent_close_delay": 5,
+        "display_close_button": false,
+        "require_zip": 1,
+        "require_street": 1,
+        "show_street": 1,
+        "show_zip": 1
+    }
+}
+
+// For ACH transactions //
+{
+    "transaction":{
+        // Required fields
+        "payment_method": "ach",
+        "action": "debit",
+        "transaction_amount": "13.00",
+        "ach_sec_code": "WEB",
+        "product_transaction_id": "1111111111111111",
+        // Optional fields for the transactions endpoint
+        "location_id": "1111111111111111111111111",
+        "transaction_api_id": "111111111111111111111111",
+        "billing_street": "43155 novi",
+        "billing_zip": "12342",
+        "tip_amount": "12",
+        "surcharge_amount": "0",
+        "order_num": "1234567890",
+        "contact_id": "222222222222222",
+        // Optional field for controling iframe behavior
+        "stylesheet_url": "{full URL - i.e. https://third.party.domain/css/styles.css}", //Recomended for ACH
+        "parent_close": true,
+        "parent_close_delay": 5,
+        "display_close_button": false,
+        "require_zip": 1,
+        "require_street": 1,
+        "show_street": 1,
+        "show_zip": 1
     }
 }
 ```
