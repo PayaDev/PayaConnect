@@ -38,7 +38,7 @@ One main thing that needs to be determined is the integration method that will b
 * [DIRECT INTEGRATION](https://github.com/PayaDev/PayaConnect/tree/master/Endpoints)
   * Most common industries: **Retail**, **Lodging**, **Restaurant**
   * This method is usually used in any of the following scenarios:
-    * Running transactions through an EMV terminal (to remain out of scope for PCI DSS).
+    * Running transactions through an EMV terminal (to remain out of scope for PCI-SSF).
     * Creating contacts, account vaults, recurrings, etc.
     * Directly connecting to the API to run transactions or download data.
     * Most situations where requests will be made server to server using the integrated software.
@@ -69,7 +69,8 @@ Once the implementation is complete, we have a brief certification process:
 * **HOSTED SOLUTIONS (HOSTED PAYMENT PAGE, ACCOUNTFORM, PAYFORM)**
 Reach out to us at sdksupport@nuvei.com to schedule your certification call. During the call we’ll make sure transaction data is passing correctly and properly formatted.
 * **NON-HOSTED SOLUTION (DIRECT INTEGRATION)**
-Email sdksupport@nuvei.com a copy of your PCI/PA-DSS certificate from an [Approved Scanning Vendor (ASV)](https://www.pcisecuritystandards.org/assessors_and_solutions/approved_scanning_vendors). Once we review your certificate we’ll provide a link to setup your certification call. During the call we’ll make sure transaction data is passing correctly and properly formatted.
+Email sdksupport@nuvei.com a copy of your PCI-DSS SAQ D compliance certificate or your Attestation of Compliance (AOC) for your PCI-SSF
+ [Approved Scanning Vendor (ASV)](https://www.pcisecuritystandards.org/assessors_and_solutions/approved_scanning_vendors). Once we review your certificate we’ll provide a link to setup your certification call. During the call we’ll make sure transaction data is passing correctly and properly formatted.
 
 Note: *Using tokenized transaction data or EMV/P2PE devices may alter PCI scope for Non-Hosted Solutions.*
 
