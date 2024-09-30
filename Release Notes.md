@@ -3,7 +3,7 @@
  ## Version 
 **Sandbox Release Date:** April 17<sup>th</sup> 2024
 
-**Production Release Date:** October 2nd 2024 (Originally scheduled for Early May 2024)
+**Production Release Date:** October 7th 2024 (Originally scheduled for Early May 2024)
 - UI updates to support Canadian Processing and configuration.
 - UI enhancement - Transaction Details screen will display all linked refunds. This will be listed as **Refund History**.
 - API enhancement - **response_message** API response field returned from a transaction request will include the value provided by the payment processor. This value is provided to Paya Connect by the payment processor in their **status_message** field. This will help to provide more details on decline and error transactions to the end user.
