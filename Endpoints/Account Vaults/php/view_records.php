@@ -24,7 +24,7 @@ Contact: sdksupport@nuvei.com
     
     // Vault Variables
     $verb = "GET";
-	  $endpoint = "/v2/accountvaults"; // This will pull all records within the primary location of the user_id within the header.
+    $endpoint = "/v2/accountvaults"; // This will pull all records within the primary location of the user_id within the header. Additional query data and filters may be applied to reduce the number of records returned.
     
         
     // cURL to submit the GET.
