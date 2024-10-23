@@ -2,7 +2,7 @@
 
 # AccountForm Integrations
 ## Overview
-Here you can learn how to create Account Vaults using our AccountForm widget, which will keep you out of scope for PCI as the form code is being generated and hosted by us, another key part of staying out of scope for PCI Compliance.
+Here you can learn how to create Account Vaults and Transactions using our AccountForm and PayForm widgets, which will reduce your scope for PCI as the form code is being generated and hosted by us.
 
 The AccountForm widget will allow you to add accountholder data to the AccountVaults Endpoint. 
 
