@@ -2,7 +2,7 @@
 
 # PayForm Integrations
 ## Overview
-Here you can learn how to create Account Vaults and Transactions using our AccountForm and PayForm widgets, which will keep you out of scope for PCI as the form code is being generated and hosted by us, another key part of staying out of scope for PCI Compliance.
+Here you can learn how to create Account Vaults and Transactions using our AccountForm and PayForm widgets, which will reduce your scope for PCI as the form code is being generated and hosted by us.
 
 The PayForm widget can be used for running *sale*, *debit (ACH)*, *authonly*, *avsonly*, or *refund (non-referenced)*, transactions. Any *void*, *authincrement*, or *authcomplete*, transactions are done as PUT transactions using the id returned from the `/v2/payform` endpoint. PUT transactions do not require `account_number` and `exp_date` fields to be submitted, therefore need to be done on the `/v2/transactions` endpoint. 
 
