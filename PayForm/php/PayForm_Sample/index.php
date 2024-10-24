@@ -44,6 +44,7 @@ Contact: sdksupport@nuvei.com
             "location_id" => $locationID,  // Required field
             "contact_id" => $contactID, // optional, but recommended
             "transaction_api_id" => $acctVaultAPIID,
+	    "product_transaction_id" => "product_transaction_id",
             //"account_vault_api_id" => $acctVaultAPIID,  // Required field
             "account_holder_name" => "john smith",
             "billing_street" => "123 Main St",
