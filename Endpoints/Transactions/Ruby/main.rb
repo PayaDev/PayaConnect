@@ -41,7 +41,6 @@ header = {
 
 reqJson = {transaction: {
   action: 'sale',
-  account_type: 'mc',
   payment_method: 'cc',
   location_id: locationID,
   transaction_amount: '1.00',
