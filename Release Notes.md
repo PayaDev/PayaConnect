@@ -1,5 +1,22 @@
 # Release Notes
 
+ ## Version 23.30.165-0
+**Sandbox Release Date:** January 13<sup>th</sup> 2025
+
+**Production Release Date:** Targeted for January 27<sup>th</sup> 2025
+
+- Updates to the code to ensure the “product_code”:”999999” is used correctly in the transaction to avoid the reject by TSYS.
+- As part of the PCI 4.0 requirements, passwords must confirm to the following requirements:
+ 	1. A password must have a minimum of 12 characters.
+ 	2. Passwords must be alphanumeric in nature and be stored or transmitted with encryption.
+ 	3. Passwords must be changed every 90 days and must not be a repetition of the previous four passwords.
+ 	4. In scenarios where a password is generated for the user because the user is new or sometimes during a password reset, the generated password must be unique for every user and it must be changed after the first use.
+- Alignment on all refunds to provide the original amount value for the total refund amount. This was not aligning consistently when selecting Refund form the Transaction Receipt
+- Surcharge amount will zero out when processing a Debit Card from Paya Connect Virtual Terminal. This is a restoration of functionality.
+- Surcharge amount will zero out when processing a Debit Card from PayForm. This is a restoration of functionality.
+As part of the authOnly, authComplete with Surcharge functionality that has been released to sandbox the exact 422 error is now displayed in the UI advising of an issue.  If a user attempts to submit an invalid amount to refund such as 0, the expectation is to receive an error message of ‘ Transaction amount must be greater than zero for the following actions: [sale, authonly, authcomplete, authincrement, debit, credit, refund, tipadjust]
+
+
  ## Version 
 **Sandbox Release Date:** November 19<sup>th</sup> 2024
 
