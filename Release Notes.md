@@ -4,7 +4,7 @@
  ## API Version 2.2.11
 **Sandbox Release Date:** January 13<sup>th</sup> 2025
 
-**Production Release Date:** March 4<sup>th</sup> 2025 Approximately 2am ET (includes release items from prior November 2024 and April 2024 Sandbox Releases, listed below)
+**Production Release Date:** March 5<sup>th</sup> 2025 Approximately 2am ET (includes release items from prior November 2024 and April 2024 Sandbox Releases, listed below)
 
 - Updates to the code to ensure the “product_code”:”999999” is used correctly in the transaction to avoid the reject by TSYS.
 - As part of the PCI 4.0 requirements, passwords must confirm to the following requirements:
@@ -21,7 +21,7 @@ As part of the authOnly, authComplete with Surcharge functionality that has been
  ## Version 
 **Sandbox Release Date:** November 19<sup>th</sup> 2024
 
-**Production Release Date:** March 4<sup>th</sup> 2025 Approximately 2am ET
+**Production Release Date:** March 5<sup>th</sup> 2025 Approximately 2am ET
 - Consumer Fee (Surcharge and Convenience Fee) Enhancement - The API will now support submitting transactions with a consumer fee using the actions AuthOnly and AuthComplete. **Important Note:** When performing an AuthComplete you are only required to submit the transaction_amount with the final total if it is the same as the original AuthOnly transaction. If the final transaction_amount is different, you must also submit the subtotal_amount, surcharge_amount, and tax fields as well, with all amounts updated. Otherwise you'll receive a 422 error response indicating the reason for the error.
 - Consumer Fee (Surcharge and Convenience Fee) Enhancement - The API will return two additional fields, auth_aurcharge_rate and auth_surcharge_fee. These are only added to AuthOnly and AuthComplete API responses. Please disregard these fields as they are only being utilized for internal logging purposes.
 - Postback Update - Previous Transaction ID - Some transaction responses via the postback service did not include a value for previous_transaction_id within the JSON data. It was simply populating as null. This has been resolved. If a transaction includes a value for previous_transaction_id the value will now be populated in the POST from the Postback service. **Note:** Postback must be configured for the Transaction resource in order to receive any postbacks for the Transactions Endpoint.
@@ -49,7 +49,7 @@ As part of the authOnly, authComplete with Surcharge functionality that has been
  ## Version 
 **Sandbox Release Date:** April 17<sup>th</sup> 2024
 
-**Production Release Date:** March 4<sup>th</sup> 2025 Approximately 2am ET (Originally scheduled for Early May 2024)
+**Production Release Date:** March 5<sup>th</sup> 2025 Approximately 2am ET (Originally scheduled for Early May 2024)
 - UI updates to support Canadian Processing and configuration.
 - UI enhancement - Transaction Details screen will display all linked refunds. This will be listed as **Refund History**.
 - API enhancement - **response_message** API response field returned from a transaction request will include the value provided by the payment processor. This value is provided to Paya Connect by the payment processor in their **status_message** field. This will help to provide more details on decline and error transactions to the end user.
@@ -69,7 +69,7 @@ As part of the authOnly, authComplete with Surcharge functionality that has been
  ## Version 
 **Sandbox Release Date:** November 2<sup>nd</sup> 2023
 
-**Production Release Date:** **Production Release Date:** March 4<sup>th</sup> 2025 Approximately 2am ET (Originally Scheduled for November 15<sup>th</sup> 2023)
+**Production Release Date:** **Production Release Date:** March 5<sup>th</sup> 2025 Approximately 2am ET (Originally Scheduled for November 15<sup>th</sup> 2023)
 - Minor UI issue resolved for "Refund Transaction">"Available to Refund" not displaying correctly.
 - Corrected API response for non-Level 3 Transaction IDs to the TransactionLevel3s Endpoint. Now returns proper 422 error response.
 - Corrected AVS responses using address within Test Data
