@@ -35,9 +35,9 @@ Below you will see examples of a data JSON object for PayForm.  These requests a
         "action": "sale",
         "transaction_amount": "13.00",
         "product_transaction_id": "1111111111111111",
+        "transaction_api_id": "111111111111111111111111",
         // Optional fields for the transactions endpoint
         "location_id": "1111111111111111111111111",
-        "transaction_api_id": "111111111111111111111111",
         "billing_street": "43155 novi",
         "billing_zip": "12342",
         "tip_amount": "12",
@@ -65,9 +65,9 @@ Below you will see examples of a data JSON object for PayForm.  These requests a
         "transaction_amount": "13.00",
         "ach_sec_code": "WEB",
         "product_transaction_id": "1111111111111111",
+        "transaction_api_id": "111111111111111111111111",
         // Optional fields for the transactions endpoint
         "location_id": "1111111111111111111111111",
-        "transaction_api_id": "111111111111111111111111",
         "billing_street": "43155 novi",
         "billing_zip": "12342",
         "tip_amount": "12",
@@ -126,6 +126,7 @@ Once you have prepared your custom CSS and made it available on a public URL you
         "payment_method": "{cc or ach}",
         "action": "sale",
         "transaction_amount": "13.00",
+        [...] // Other Required Fields
         // Optional field for controling iframe behavior
         "stylesheet_url": "{full URL - i.e. https://third.party.domain/css/styles.css}",
         [...] // Other Optional Fields
