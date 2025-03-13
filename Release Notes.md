@@ -1,5 +1,19 @@
 # Release Notes
 
+ ## UI Version 23.30.172-0
+**Sandbox Release Date:** March 12<sup>th</sup> 2025
+
+**Production Release Date:** Est. March 25<sup>th</sup> 2025 Paya Connect User Interface/Virtual Terminal
+
+**Paya Connect Sandbox and Paya Connect Developer Portal Multi-Factor Authentication**
+
+Users will receive an email with 6 digit MFA code to their registered email address when the below conditions are met:
+
+- User is logging in for the first time
+- User has been logged out for 15 calendar days
+MFA Code will expire after 5 minutes. When users attempt to enter an expired MFA code they will receive an error message and a new code will automatically be delivered to their email. 
+
+
  ## UI Version 23.30.165
  ## API Version 2.2.11
 **Sandbox Release Date:** January 13<sup>th</sup> 2025
