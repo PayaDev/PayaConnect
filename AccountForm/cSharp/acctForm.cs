@@ -11,7 +11,7 @@ using System.Web;
 /*----------------------------------------------
 Author: SDK Support Group
 Company: Paya
-Contact: sdksupport@paya.com
+Contact: sdksupport@nuvei.com
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!! Samples intended for educational use only!!!
 !!!        Not intended for production       !!!
@@ -35,7 +35,7 @@ class MainClass
         // TH - Test Data is provided when you register at
         // https://developer.sandbox.payaconnect.com/applicationrequest
         // If you have any questions feel free to reach out
-        // to us directly at sdksupport@paya.com 
+        // to us directly at sdksupport@nuvei.com 
         var locationID = "Insert Location ID";
         var contactID = "Insert Contact ID";
         var acctVaultAPIID = "SDK18";
