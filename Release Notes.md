@@ -2,7 +2,7 @@
 
 **Sandbox Release Date:** June 16<sup>th</sup> 2025
 
-**Production Release Date:** July 7<sup>th</sup> 2025
+**Production Release Date:** July 9<sup>th</sup> 2025
 
 - Hosted Forms now include a dropdown and fill option for routing numbers when entering ACH account information.
 - Virtual Terminal now supports a secondary ACH account number field for enhanced account number validation.
