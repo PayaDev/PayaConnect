@@ -1,5 +1,17 @@
 # Release Notes
 
+**Sandbox Release Date:** June 16<sup>th</sup> 2025
+
+**Production Release Date:** July 7<sup>th</sup> 2025
+
+- Hosted Forms now include a dropdown and fill option for routing numbers when entering ACH account information.
+- Virtual Terminal now supports a secondary ACH account number field for enhanced account number validation.
+- The Transaction Reports smart search feature has been updated to allow users to add all search criteria and use a "Search" button to execute the search.
+- AccountVault now supports alphanumeric values in the account holder name field for all vault record creation endpoints.
+- The “Require CVV” setting no longer applies to terminal transactions. Transactions forwarded to terminals will function as expected even when the “Require CVV” setting is enabled.
+- Batch Close Email Templates now load correctly in the dropdown list, allowing users to complete the batch close email notification setup process.
+- Enhanced Internal Logging and Bug Fixes
+
  ## UI Version 23.30.172-0
 **Sandbox Release Date:** March 12<sup>th</sup> 2025
 
