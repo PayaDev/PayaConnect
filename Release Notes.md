@@ -1,5 +1,17 @@
 # Release Notes
 
+**Sandbox Release Date:** August 7<sup>th</sup> 2025
+
+**Production Release Date:** Scheduled for August 20<sup>th</sup> 2025
+
+- Compliance update to support Mastercard Transaction Link Identifier (TLID) for Settlement. No impact to UI or API, this is a background process.
+- UI Enhancement to Users tab. End users will receive a pop up confirmation when an end user attempts to deactivate an existing user account.
+- UI Enhancement to the ACH Transactions Settlements Report. File export option will now appear for this report.
+- UI Enhancement to the Transactions Report. CSV export will now support up to 10,000 records. This was limited to 5,000 previously.
+- Resolved a bug with the Transactions Report. Custom Date Range filter was not working. The report will now filter transaction records by the selected custom date range.
+- Resolved a bug with the email notification templates. The default template value will now load as expected.
+- Resolved a bug when editing the Hosted Payment Page (HPP) within the Paya Connect UI. End users are now able to add and update the following items when building and customizing HPP: Dropdown, Checkbox, Date Input, and Text Input.
+
 **Sandbox Release Date:** June 16<sup>th</sup> 2025
 
 **Production Release Date:** July 9<sup>th</sup> 2025
