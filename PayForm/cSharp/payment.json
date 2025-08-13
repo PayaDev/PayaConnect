@@ -18,7 +18,6 @@
     "send_parent_message": 0,
     "parent_close": true,
     "parent_close_delay": 5,
-    "parent_origin": null,
     "display_close_button": true,
     "redirect_url_on_approval": "https://www.google.com",
     "redirect_url_delay": 10
