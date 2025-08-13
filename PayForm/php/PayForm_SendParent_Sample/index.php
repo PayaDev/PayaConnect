@@ -51,7 +51,6 @@ Contact: sdksupport@nuvei.com
             "send_parent_message" => 1,
             "parent_close" => 0,
             "parent_close_delay" => 1,
-            "parent_origin" => null,
             "display_close_button" => true,
             "save_account" => 1,
             "save_account_title" => "sdk payform test",
