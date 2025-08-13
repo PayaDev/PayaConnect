@@ -46,7 +46,6 @@ Below you will see examples of a data JSON object for AccountForm.  These reques
         "display_close_button": true,
         "parent_close": true,
         "parent_close_delay": 3,
-        "parent_origin": null,
         "redirect_url_on_approval": "https://www.google.com",
         "redirect_url_delay": 10
     }
