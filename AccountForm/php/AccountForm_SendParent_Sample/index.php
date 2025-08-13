@@ -56,7 +56,6 @@ Contact: sdksupport@nuvei.com
           "display_close_button" => "1",
           "parent_close" => "1",
           "parent_close_delay" => "3",
-          "parent_origin" => null,
           "redirect_url_on_approval" => "successful.php",
           "redirect_url_delay" => "1"
         ]
