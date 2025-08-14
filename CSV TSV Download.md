@@ -11,7 +11,7 @@ Below you will find information on how you can download a file containing your t
  
 
 ## Request Example
-`{{Host}}/v2/transactions?developer-id={developer_id}&user-id={user-id}&user-api-key={user-api-key}&location_id={location_id}&create_ts_from={from_date}&created_ts_to={from_date}&_format={csv or tsv}`
+`GET /v2/transactions?developer-id={developer_id}&user-id={user-id}&user-api-key={user-api-key}&location_id={location_id}&create_ts_from={from_date}&created_ts_to={from_date}&_format={csv or tsv}`
 
 ***Note:***
 - from_date
