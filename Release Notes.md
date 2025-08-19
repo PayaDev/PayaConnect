@@ -11,7 +11,7 @@
 - Resolved a bug with the Transactions Report. Custom Date Range filter was not working. The report will now filter transaction records by the selected custom date range.
 - Resolved a bug with the email notification templates. The default template value will now load as expected.
 - Resolved a bug when editing the Hosted Payment Page (HPP) within the Paya Connect UI. End users are now able to add and update the following items when building and customizing HPP: Dropdown, Checkbox, Date Input, and Text Input.
-- Hotfix from 8/14/2024 included within this release. Resolved an issue where the wrong business name was being submitted for settlement in bankcard batches.
+- Hotfix from 8/14/2025 included within this release. Resolved an issue where the wrong business name was being submitted for settlement in bankcard batches.
 
 **Sandbox Release Date:** June 16<sup>th</sup> 2025
 
