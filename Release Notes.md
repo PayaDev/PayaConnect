@@ -2,7 +2,7 @@
 
 **Sandbox Release Date:** August 7<sup>th</sup> 2025
 
-**Production Release Date:** Originally Scheduled for August 20<sup>th</sup> 2025, now TBA
+**Production Release Date:** Originally Scheduled for August 20<sup>th</sup> 2025, now scheduled for early morning September 25<sup>th</sup> 2025
 
 - Compliance update to support Mastercard Transaction Link Identifier (TLID) for Settlement. No impact to UI or API, this is a background process.
 - UI Enhancement to Users tab. End users will receive a pop up confirmation when an end user attempts to deactivate an existing user account.
