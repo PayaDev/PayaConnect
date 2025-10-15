@@ -1,8 +1,15 @@
 # Release Notes
 
+**Sandbox Release Date:** October 14<sup>th</sup> 2025
+
+**Production Release Date:** Early Morning October 17<sup>th</sup> 2025
+
+- Compliance update to support Visa Commercial Enhanced Data Program (CEDP). IAP updated to support logic required for Level 2 and Level 3 fields. No impact or changes to the process merchants and partners utilize to support Level 3 data today.
+- API Enhancement to the Transactions Endpoint in order to support five new optional "service_*" fields for MasterCard transactions: service_address, service_city, service_country, service_state, and service_zip. These fields are optional and will not impact existing integrations.
+
 **Sandbox Release Date:** August 7<sup>th</sup> 2025
 
-**Production Release Date:** Originally Scheduled for August 20<sup>th</sup> 2025, now scheduled for early morning September 25<sup>th</sup> 2025
+**Production Release Date:** Originally Scheduled for August 20<sup>th</sup> 2025, completed early morning September 25<sup>th</sup> 2025
 
 - Compliance update to support Mastercard Transaction Link Identifier (TLID) for Settlement. No impact to UI or API, this is a background process.
 - UI Enhancement to Users tab. End users will receive a pop up confirmation when an end user attempts to deactivate an existing user account.
