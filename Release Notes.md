@@ -1,5 +1,14 @@
 # Release Notes
 
+**Sandbox Release Date:** November 5<sup>th</sup> 2025
+
+**Production Release Date:** Early Morning November 12<sup>th</sup> 2025
+
+- Added support for Visa Maximum Processing Date
+- UI Enhancement to allow support users to Retry Batch/Force Close when a batch is stuck with a "Processing" status.
+- Internal Enhancement to support Unique Hash-Key Opt-In
+- Fix for Error 0291 attempting to issue a referenced refund for Cloud EMV terminal transactions
+
 **Sandbox Release Date:** October 14<sup>th</sup> 2025
 
 **Production Release Date:** Early Morning October 17<sup>th</sup> 2025
