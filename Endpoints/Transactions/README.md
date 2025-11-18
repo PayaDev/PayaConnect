@@ -1670,6 +1670,134 @@ Response
 }
 ```
 
+### Perform a WEB Void
+`PUT /v2/transactions/{id}`
+
+The action “void” is used to reverse the ACH "debit" prior to settlement within the same day. ACH settlement cutoff time for Paya ACH is 12pm MST/2am EST. An ACH WEB transaction may not be voided past that time on the same day as the debit was created.
+
+Request
+```json
+{
+    "transaction": {
+        "action": "void"
+    }
+}
+```
+Response
+```json
+{
+	"transaction": {
+		"id": "11f0c4885e15c69a94fec5b5",
+		"payment_method": "ach",
+		"account_vault_id": null,
+		"recurring_id": null,
+		"first_six": "012345",
+		"last_four": "7890",
+		"account_holder_name": "Thomas SDK",
+		"transaction_amount": "0.00",
+		"description": "testing again",
+		"transaction_code": null,
+		"avs": null,
+		"batch": null,
+		"order_num": "416599700381",
+		"verbiage": "Test 7970",
+		"transaction_settlement_status": null,
+		"effective_date": null,
+		"routing": "072000326",
+		"return_date": null,
+		"created_ts": 1763475042,
+		"modified_ts": 1763475092,
+		"transaction_api_id": "sdk1763475042",
+		"terms_agree": null,
+		"notification_email_address": "example@example.com",
+		"notification_email_sent": true,
+		"response_message": "Test 7970",
+		"auth_amount": "1.00",
+		"auth_code": "AUTH NUM 272-172",
+		"status_id": 201,
+		"type_id": 50,
+		"location_id": "11111-11111-11111-11111",
+		"reason_code_id": 1000,
+		"contact_id": null,
+		"billing_zip": null,
+		"billing_street": "123 Main St",
+		"product_transaction_id": "22222-22222-22222-22222",
+		"tax": "0.00",
+		"customer_ip": "10.10.10.10",
+		"customer_id": "Cust1763475042",
+		"po_number": null,
+		"avs_enhanced": null,
+		"cvv_response": null,
+		"billing_phone": null,
+		"billing_city": null,
+		"billing_state": null,
+		"clerk_number": null,
+		"tip_amount": "0.00",
+		"bill_payment": 0,
+		"created_user_id": "99999-99999-99999-99999",
+		"modified_user_id": "99999-99999-99999-99999",
+		"ach_identifier": null,
+		"check_number": null,
+		"recaptcha_score": null,
+		"previous_transaction_id": null,
+		"auth_surcharge_rate": null,
+		"is_surcharge": null,
+		"auth_surcharge_fee": null,
+		"subtotal_amount": "0.00",
+		"settle_date": null,
+		"charge_back_date": null,
+		"void_date": "2025-11-18 14:11:36",
+		"account_type": "checking",
+		"is_recurring": false,
+		"is_accountvault": false,
+		"transaction_c1": null,
+		"transaction_c2": null,
+		"transaction_c3": null,
+		"online_payment_cryptogram": null,
+		"ecommerce_indicator": null,
+		"digital_payment_cryptogram": null,
+		"additional_amounts": [],
+		"terminal_serial_number": null,
+		"entry_mode_id": "K",
+		"terminal_id": null,
+		"quick_invoice_id": null,
+		"ach_sec_code": "WEB",
+		"custom_data": {
+			"test": "sdk_test"
+		},
+		"hosted_payment_page_id": null,
+		"trx_source_id": 12,
+		"transaction_batch_id": null,
+		"recurring_flag": "no",
+		"recurring_number": null,
+		"installment_number": null,
+		"installment_total_count": null,
+		"external_recurring_flag": "no",
+		"external_installment_number": null,
+		"external_installment_total_count": null,
+		"external_recurring_number": null,
+		"tlid": null,
+		"service_address": null,
+		"service_state": null,
+		"service_zip": null,
+		"service_city": null,
+		"service_country": null,
+		"checkin_date": null,
+		"checkout_date": null,
+		"room_num": null,
+		"room_rate": "0.00",
+		"advance_deposit": false,
+		"no_show": false,
+		"emv_receipt_data": null,
+		"_links": {
+			"self": {
+				"href": "https://api.sandbox.payaconnect.com/v2/transactions/11f0c4885e15c69a94fec5b5"
+			}
+		}
+	}
+}
+```
+
 ### Perform a PPD/CCD Debit
 `POST /v2/transactions`
 
