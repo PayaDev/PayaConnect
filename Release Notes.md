@@ -1,5 +1,19 @@
 # Release Notes
 
+**Sandbox Release Date:** Early January 2026
+
+**Production Release Date:** January 22<sup>nd</sup> 2026
+
+** UI Version 23.30.253-0 **
+
+** API Version 1.0.1243-0 **
+
+- Updated surchage amount submission for auth and settlement. No impact to merchants or integrators.
+- Updated support for CEDP Participation Flag. No impact to merchants or integrators.
+- Updated support for VAT Invoice Number. No impact to merchants or integrators.
+- Update Account Holder name field (account_holder_name) to support up to 60 characters. No impact expected as the previous requirement was limited to 32 characters.
+- Additional Support and Compliance Updates.
+
 **Sandbox Release Date:** November 5<sup>th</sup> 2025
 
 **Production Release Date:** Early Morning November 12<sup>th</sup> 2025
