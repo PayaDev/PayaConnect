@@ -24,7 +24,7 @@ There are a variety of identifiers and keys used within the platform, here is a 
 | **Intended for**    | **Name**                 | **Purpose**                                                                                                                                                                                                                                                                                                                             |
 |---------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Development Company | developer_id             | This is used to identify the developer that is making the request in our logs.                                                                                                                                                                                                                                                          |
-| Development Company | developer_encryption_key | This is used when implementing SSO (Single Sign-On) integration method.                                                                                                                                                                                                                                                                 |
+| Development Company | developer_encryption_key | This is used when implementing SSO (Single Sign-On) integration method. Note: SSO is not available at this time.                                                                                                                                                                                                                                                                 |
 | Location            | location_id              | This is typically a single merchant, however a user can belong to multiple.                                                                                                                                                                                                                                                             |
 | Location            | ticket_hash_key          | This is used when implementing the Hosted Payment Page (HPP) integration method.                                                                                                                                                                                                                                                        |
 | Location            | product_transaction_id   | This is equivelant to a merchant account (Deposit account), a location can have multiple configured for use.  When integrating and your customers may have multiple merchant accounts this product_transaction_id should be passed when running a transaction otherwise the system will default to what is configured for the location. |
@@ -56,10 +56,7 @@ One main thing that needs to be determined is the integration method that will b
     * Anonymous payment pages
     * Shopping carts and other online purchases
     * Other external payment accepting pages
-* [SINGLE SIGN ON](https://github.com/PayaDev/PayaConnect/tree/master/SSO/)
-  * Most common industries: **Retail**, **MOTO**
-  * This method is usually used in the following scenario:
-    * Where users will be using our pre-built user interface to run their transactions.
+
 
 If done correctly, each of the above methods will allow you to limit your scope of PCI by not accepting, transmitting, or storing cardholder data.
 
@@ -338,16 +335,4 @@ The base setup will work for situations that require static content. It the tran
 
 If your Hosted Payment Page requires a different transaction amount for each payment, and the end customer is not allowed to alter the transaction amount, then you will need to use a slightly more advanced setup. This method is detailed further under the [Hosted Payment Page](https://github.com/PayaDev/PayaConnect/tree/master/HostedPaymentPage) documentation.
 
-## [Single Sign On](https://github.com/PayaDev/PayaConnect/tree/master/SSO/)
-The single sign on method is another way to help keep your software out of scope. This method is very quick and easy to code, and only requires a minimal amount of API knowledge. This method should be used in a closed environment and controlled with user access within your software. There are two parts to this method, one is running the transaction, and the other, which is optional, is to download the transaction.
 
-The concept of this method is as follows:
-
-* Place a clickable button inside your software or on your internal web app.
-* When a user clicks this button, it will open a GET request to our API in the user's browser.
-* The web request then hits our API server, authenticates the user, and redirects them to our user interface to a secure page.
-* Our user interface is then used to run a transaction by either keying in the card data, or capturing the card data with an EMV terminal.
-
-Once the transaction has been run and the user returns to your software, you will need to download the transaction(s) to make sure it is logged properly in your system. Alternatively, if you have an online app, we can perform a postback to your system so you can log the transaction properly. Our API performs real time postbacks once a transaction has been created or updated.
-
-The specifics on how to perform the above sequence of events can be found [here](https://github.com/PayaDev/PayaConnect/tree/master/SSO/).
