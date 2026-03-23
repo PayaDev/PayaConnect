@@ -44,13 +44,16 @@ One main thing that needs to be determined is the integration method that will b
     * Most situations where requests will be made server to server using the integrated software.
     * Software vendors wish to remain out of scope for PCI by running transactions through an EMV terminal.
 * [ACCOUNTFORM](https://github.com/PayaDev/PayaConnect/tree/master/AccountForm) / [PAYFORM](https://github.com/PayaDev/PayaConnect/tree/master/PayForm)
-  * Most common industries: **Retail**, **MOTO**, **Lodging**, **Restaurant**
+  * Most common industries: **Ecommerce**, **Retail**, **MOTO**, **Lodging**, **Restaurant**
   * This method is usually used in the following scenarios:
     * POS software that incorporates payments
-    * Internal web sites where users authenticate internally and accept payment
-  * This method should not be used for external payments. For external payments the Hosted Payment Page method should be used.
+    * Merchant Initiated (MIT) Internal web sites where users authenticate internally and accept payment
+    * Consumer Initiated (CIT) External web sites where users register and authenticate to submit payment
+    * Donation pages
+    * Shopping carts and other online purchases
+  * This method may be used for external payments. However, security for the hosted form will be managed by the integrator through their solution. Additional notes on security will be found within the AccountForm/PayForm documentation.
 * [HOSTED PAYMENT PAGE](https://github.com/PayaDev/PayaConnect/tree/master/HostedPaymentPage)
-  * Most common industries: **E-commerce**
+  * Most common industries: **Ecommerce**
   * This method is usually used in the following scenarios:
     * Donation pages
     * Anonymous payment pages
