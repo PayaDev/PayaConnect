@@ -1,5 +1,19 @@
 # Release Notes
 
+**Sandbox Release Date:** February 12th 2026
+
+**Production Release Date:** March 25th/26th 2026
+
+- API Update to include the field "transaction_discount_amount" within the leve3_data array on the /v2/transactionlevel3s Endpoint. This is completely separate from the line-item discount amount(s), and the transaction_discount_amount does not need to equal the sum total of the lint-item discount amounts.
+- Card Account Updater (CAU) Updates Postback Support. The Paya Connect Postback Service will now permit you to setup a postback for updates when the CAU updates a stored CC payment method.
+- MasterCard Service Address Support on PayForm. An integrator may now pass "show_service_address_fields": 1 | true in order to display the new Service Address Fields within PayForm.
+- Consumer Fee (Surcharge or Convenience Fee) Amount Added to Email Receipt Notifications. If the Location is utilizing the default notification templates, a consumer fee will now be included if the consumer fee service is setup on the deposit account (product_transaction_id) processing the transaction. If the Location is using a custom notification template, the fee will need to be addeed to the notification in order to be included.
+- Batch Summary Details Added to the Location Batch View Report. You'll now see two extra columns when you view the Batch tab within your location, Number of Transactions and Total Amount. This reduces the need to click into the batch to get a quick summary.
+- Location Tab links will now open in new browser tabs. This is especially helpful if you have more than one location in your Location view and need to open each one separately.
+- Automated Batch Sync Process Between the API and ZGATE Components. This will ensure the batch status is accurate for all PCON partners/merchants.
+- MFA Email Notification Format Updates. We've updated the email format to improve the overall look of the notification.
+- Router Transaction Endpoint Updated to Include Exp Date in the API response when a payment method is stored within the vault as part of the transaction, "save_account": 1 | true.
+  
 **Sandbox Release Date:** Early January 2026
 
 **Production Release Date:** January 22<sup>nd</sup> 2026
