@@ -2,7 +2,7 @@
 
 **Sandbox Release Date:** February 12th 2026
 
-**Production Release Date:** March 25th/26th 2026
+**Production Release Date:** TBD
 
 - API Update to include the field "transaction_discount_amount" within the leve3_data array on the /v2/transactionlevel3s Endpoint. This is completely separate from the line-item discount amount(s), and the transaction_discount_amount does not need to equal the sum total of the lint-item discount amounts.
 - Card Account Updater (CAU) Updates Postback Support. The Paya Connect Postback Service will now permit you to setup a postback for updates when the CAU updates a stored CC payment method.
