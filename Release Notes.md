@@ -1,5 +1,16 @@
 # Release Notes
 
+**Sandbox Release Date:** April 2026
+
+**Production Release Date:** April 28th 2026
+
+** UI Version 23.30.282-0 **
+
+** API Version 1.0.1384-0 **
+
+- CEDP Compliance Update - L3 Data will not be submitted within batch settlement if the MCC codes are not eligible.
+- Updated Referenced Refund logic to support Visa transactions processed using Cloud EMV devices. This should resolve all 0291 errors.
+
 **Sandbox Release Date:** February 12th 2026
 
 **Production Release Date:** April 2nd 2026
