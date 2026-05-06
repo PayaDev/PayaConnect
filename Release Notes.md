@@ -1,5 +1,16 @@
 # Release Notes
 
+**Sandbox Release Date:** April 30th 2026
+
+**Production Release Date:** May 6th 2026
+
+** UI Version 23.30.282-0 **
+
+** API Version 1.0.1390-0 **
+
+- CEDP Compliance Update - L3 Default Data will no longer be applied to eligible transactions. Merchants will now need to provide their own data for L3 compliance.
+- CEDP Compliance Update - Resolved a generic 500 error when a merchant submits L3 data without at least one line item. Merchants will now receive a 422 error stating "Line item record details missing". This is a more accurate response.
+
 **Sandbox Release Date:** April 2026
 
 **Production Release Date:** April 28th 2026
