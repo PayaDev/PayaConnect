@@ -1,4 +1,7 @@
 # Release Notes
+**Production Release Date:** May 27th 2026
+
+- UI update for L3 data on submitted transactions. Users will now see the level 3 button presented during the transaction entry or when viewing the transaction receipt.  When selected, the user will be presented with the fields to enter to be included with the transaction or presented with the values provided on the transaction when viewing the receipt
 
 **Sandbox Release Date:** April 30th 2026
 
