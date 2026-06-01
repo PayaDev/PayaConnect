@@ -1799,6 +1799,140 @@ Response
 }
 ```
 
+### Perform a WEB Refund
+`POST /v2/transactions`
+
+The action “refund” is used to reverse the ACH "debit" once the original transaction has reached the settled status. ACH WEB Refund is considered a separate transaction, but references the original using the previous_transaction_id field to pass the original transaction_id. Only a full refund is permitted. Partial refunds will appear to approve, but will be rejected within a few days. If you need to perform a partial refund, you must perform a CCD Credit from a previous transaction, referenced below.
+
+Request
+```json
+{
+	"transaction": {
+		"action": "refund",
+		"payment_method": "ach",
+		"ach_sec_code": "WEB",
+		"transaction_api_id": "API123456789",
+		"transaction_amount": 1,
+		"location_id": "11111-11111-11111-11111",
+		"product_transaction_id": "22222-22222-22222-22222",
+		"previous_transaction_id": "11f0f7101946ff92bddf8a03"
+	}
+}
+```
+Response
+```json
+{
+    "transaction": {
+        "id":"11f0c0e50bec9fd48cbc2893",
+        "payment_method":"ach",
+        "account_vault_id":null,
+        "recurring_id":null,
+        "first_six":"207995",
+        "last_four":"0953",
+        "account_holder_name":"Test Account",
+        "transaction_amount":"1.00",
+        "description":"",
+        "transaction_code":null,
+        "avs":null,
+        "batch":null,
+        "order_num":"ORD123456789",
+        "verbiage":"Test 9775",
+        "transaction_settlement_status":null,
+        "effective_date":null,
+        "routing":"072000326",
+        "return_date":null,
+        "created_ts":1763075042,
+        "modified_ts":1763075042,
+        "transaction_api_id":null,
+        "terms_agree":null,
+        "notification_email_address":null,
+        "notification_email_sent":true,
+        "response_message":null,
+        "auth_amount":"1.00",
+        "auth_code":"AUTH NUM 272-172",
+        "status_id":131,
+        "type_id":30,
+        "location_id":"11111-11111-11111-11111",
+        "reason_code_id":1000,
+        "contact_id":null,
+        "billing_zip":null,
+        "billing_street":"123 Main St",
+        "product_transaction_id":"22222-22222-22222-22222",
+        "tax":"0.00",
+        "customer_ip":"38.23.18.227",
+        "customer_id":null,
+        "po_number":null,
+        "avs_enhanced":null,
+        "cvv_response":null,
+        "billing_phone":null,
+        "billing_city":null,
+        "billing_state":"GA",
+        "clerk_number":"",
+        "tip_amount":"0.00",
+        "bill_payment":false,
+        "created_user_id":"11e89734da441250a2d35597",
+        "modified_user_id":"11e89734da441250a2d35597",
+        "ach_identifier":null,
+        "check_number":null,
+        "recaptcha_score":null,
+        "previous_transaction_id":"11eb8bd6c1c86b7e89868db3",
+        "auth_surcharge_rate":null,
+        "is_surcharge":null,
+        "auth_surcharge_fee":null,
+        "subtotal_amount":"1.00",
+        "settle_date":null,
+        "charge_back_date":null,
+        "void_date":null,
+        "account_type":"checking",
+        "is_recurring":false,
+        "is_accountvault":false,
+        "transaction_c1":null,
+        "transaction_c2":null,
+        "transaction_c3":null,
+        "online_payment_cryptogram":null,
+        "ecommerce_indicator":null,
+        "digital_payment_cryptogram":null,
+        "additional_amounts": [],
+        "terminal_serial_number":null,
+        "entry_mode_id":"K",
+        "terminal_id":null,
+        "quick_invoice_id":null,
+        "ach_sec_code":"WEB",
+        "custom_data":null,
+        "hosted_payment_page_id":null,
+        "trx_source_id":12,
+        "transaction_batch_id":null,
+        "recurring_flag":"no",
+        "recurring_number":null,
+        "installment_number":null,
+        "installment_total_count":null,
+        "external_recurring_flag":"no",
+        "external_installment_number":null,
+        "external_installment_total_count":null,
+        "external_recurring_number":null,
+        "tlid":null,
+        "service_address":null,
+        "service_state":null,
+        "service_zip":null,
+        "service_city":null,
+        "service_country":null,
+        "checkin_date":null,
+        "checkout_date":null,
+        "room_num":"",
+        "room_rate":"0.00",
+        "advance_deposit":false,
+        "no_show":false,
+        "emv_receipt_data":null,
+        "_links": {
+            "self": {
+                "href":"https://api.sandbox.payaconnect.com/v2/transactions/11f0c0e50bec9fd48cbc2893"
+            }
+        }
+    }
+}
+```
+
+
 ### Perform a PPD/CCD Debit
 `POST /v2/transactions`
 
@@ -1917,7 +2051,7 @@ Response
   }
 }
 ```
-Perform a PPD/CCD Debit from an Account Vault
+### Perform a PPD/CCD Debit from an Account Vault
 `POST /v2/transactions`
 
 The action “debit” is used to move funds from the account holder to the merchant. This request will pull the account information from the account_vault_id. The SEC codes of PPD or CCD indicate that this is a merchant-initiated transaction. See PPD and CCD within the [Paya ACH Authorization Requirements]() for more details.
