@@ -1,4 +1,13 @@
 # Release Notes
+**Production Release Date:** June 25th 2026
+
+**UI Version 23.30.285-0**
+
+**API Version 1.0.1397-0**
+
+- UI Update - Remove L3 Default Configuration from the CC service setup screen.
+- UI Branding Update - Default branding will reflect Nuvei branding where partners, merchants, and integrators have not provided their custom branding. API URLs and email addresses will continue to reflect the Paya Connect domains.
+
 **Production Release Date:** May 27th 2026
 
 - UI update for L3 data on submitted transactions. Users will now see the level 3 button presented during the transaction entry or when viewing the transaction receipt.  When selected, the user will be presented with the fields to enter to be included with the transaction or presented with the values provided on the transaction when viewing the receipt
@@ -7,9 +16,9 @@
 
 **Production Release Date:** May 6th 2026
 
-** UI Version 23.30.282-0 **
+**UI Version 23.30.282-0**
 
-** API Version 1.0.1390-0 **
+**API Version 1.0.1390-0**
 
 - CEDP Compliance Update - L3 Default Data will no longer be applied to eligible transactions. Merchants will now need to provide their own data for L3 compliance.
 - CEDP Compliance Update - Resolved a generic 500 error when a merchant submits L3 data without at least one line item. Merchants will now receive a 422 error stating "Line item record details missing". This is a more accurate response.
@@ -18,9 +27,9 @@
 
 **Production Release Date:** April 28th 2026
 
-** UI Version 23.30.282-0 **
+**UI Version 23.30.282-0**
 
-** API Version 1.0.1384-0 **
+**API Version 1.0.1384-0**
 
 - CEDP Compliance Update - L3 Data will not be submitted within batch settlement if the MCC codes are not eligible.
 - Updated Referenced Refund logic to support Visa transactions processed using Cloud EMV devices. This should resolve all 0291 errors.
@@ -29,9 +38,9 @@
 
 **Production Release Date:** April 2nd 2026
 
-** UI Version 23.30.272-0 **
+**UI Version 23.30.272-0**
 
-** API Version 1.0.1381-0 **
+**API Version 1.0.1381-0**
 
 - API Update to include the field "transaction_discount_amount" within the leve3_data array on the /v2/transactionlevel3s Endpoint. This is completely separate from the line-item discount amount(s), and the transaction_discount_amount does not need to equal the sum total of the lint-item discount amounts.
 - Card Account Updater (CAU) Updates Postback Support. The Paya Connect Postback Service will now permit you to setup a postback for updates when the CAU updates a stored CC payment method.
@@ -47,9 +56,9 @@
 
 **Production Release Date:** January 22<sup>nd</sup> 2026
 
-** UI Version 23.30.253-0 **
+**UI Version 23.30.253-0**
 
-** API Version 1.0.1243-0 **
+**API Version 1.0.1243-0**
 
 - Updated surchage amount submission for auth and settlement. No impact to merchants or integrators.
 - Updated support for CEDP Participation Flag. No impact to merchants or integrators.
