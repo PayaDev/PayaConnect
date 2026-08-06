@@ -1,4 +1,21 @@
 # Release Notes
+
+**Sandbox Release Date:** July 24th 2026
+
+**Production Release Date:** August 6th 2026
+
+**UI Version 23.30.286-0**
+
+**API Version 1.0.1398-0**
+
+- UI Update - The Request Headers table in the View API Log screen now always displays in a consistent, correctly formatted layout. The API Logs tab on the Transaction Detail view has also been updated to include L3 data endpoint requests and responses associated with the transaction ID.
+- UI Reporting Update - The transaction metrics table now captures additional attributes including an IAP-enabled flag, card brand, merchant name, reseller name, domain, transaction source type, along with account number and bank reference number. New fields are populated for incoming transactions and sourced from existing upstream systems.
+- UI Notification Template Update - The display names of all applicable system default templates that support surcharge now include a standardized “(Supports Surcharge)” suffix, and the display name column was increased to support 128 characters.
+
+**Production Release Date:** July 28th 2026
+
+- Terminal Routing Service (TRS) Update - Preparation to support updated Cloud EMV devices.
+
 **Production Release Date:** June 25th 2026
 
 **UI Version 23.30.285-0**
