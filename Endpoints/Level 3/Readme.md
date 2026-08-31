@@ -4,20 +4,17 @@ The Level 3 Data endpoint (`/v2/transactionlevel3s`) is used to create/update/re
 For Locations\Merchants that have Level 3 Data enabled:
 
 1. The Level 3 Data endpoint can be used to supply all the extra data necessary to help qualify the transactions. The Level 3 Data is submitted the same for every processor, but is submitted differently for Visa vs Mastercard transactions (see examples below).
-2. The initial Level 3 Data is submitted by the API up front.
-	1. Each transaction that is run with a commercial (or purchasing) card will have default Level 3 Data sent to the processor. This is helpful so that even if a merchant doesn't update the transaction with the necessary Level 3 Data, it will still contain a basic record of Level 3 Data to help with the qualifications.
+2. When IAP is enabled for a merchant's location, the gateway will supply meaningful information in order to attempt to meet CEDP/Level 3 compliance for the transaction.
 3. If a merchant needs to update the Level 3 Data to supply more specific information, this is done by an additional POST request to the /v2/transactionlevel3s endpoint.
 	1. Every POST will overwrite any previous Level 3 Data submitted for the transaction.
 		1. Additional POSTs will need to contain ALL the Level 3 Data that needs to be submitted to the processor.
-		2. Omitting a previously supplied value will clear that value from the transaction record.
+		2. Omitting a previously supplied value may clear that value from the transaction record.
 
 If you are not sure if you can use the Level 3 Data endpoint, perform these steps to determine whether you are able:
 
 1. Run a transaction.
-2. Once the initial transaction is complete, submit a GET request to: `/v2/transactions/{{transaction_id}}?expand=transaction_level3`
-3. You should get a response with typical transaction data, but you should also notice an extra field in the response called "transaction_level3".
-4. If the transaction_level3 field has Level 3 Data then you can use the Level 3 Data endpoint.
-5. If this field is null then you cannot use the Level 3 Data endpoint.
+2. Parse the response details for success/failure using the status_id, reason_code_id, level3_indicator, among other values.
+3. Check the level3_indicator for "true" which means it is level 3 compatible or "false" which means it is not level 3 compatible.
 
 INDUSTRY SUPPORT BY PROCESSOR
 | Industry         | TSYS | FirstData | Vantiv |
