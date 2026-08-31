@@ -92,141 +92,40 @@ Any other AVS will decline the AVS but not decline the transaction. Not sending 
 
 When using CCs, feel free to use any future date for the month/expiration when testing. 
 
-**Visa Personal:**
-
-* **Keyed:**
-4111111111111111 Exp: 12/25
-  
-    4012888888881881 Exp: 12/25
-* **Swiped:**
-%B4111111111111111^TEST CARD/VI^21121015432112345678?;4111111111111111=21121015432112345678?
-
-**Visa Corporate/Purchase:**
-
-* **Keyed:**
-4005562231212149 Exp: 12/25
-* **Swiped:**
-%B4005562231212149^TEST CARD/VI^21121015432112345678?;4005562231212149=21121015432112345678?
-
-**Visa Purchasing:**
-
-* **Keyed:**
-4485271031055802 Exp: 12/25
-* **Swiped:**
-%B4485271031055802^TEST CARD/VI^21121015432112345678?;4485271031055802=21121015432112345678?
-
-**Visa Debit Classic:**
-
-* **Keyed:**
-4556773060150333 Exp: 12/25
-* **Swiped:**
-%B4556773060150333^TEST CARD/VI^21121015432112345678?;4556773060150333=21121015432112345678?
-
-**Visa Credit:**
-
-* **Keyed:**
-4916065618219339 Exp: 12/25
-* **Swiped:**
-%B4916065618219339^TEST CARD/VI^21121015432112345678?;4916065618219339=21121015432112345678?
-
-**Visa Fleet Purchasing:**
-
-* **Keyed:**
-4485420616463945 Exp: 12/25
-* **Swiped:**
-%B4485420616463945^TEST CARD/VI^21121015432112345678?;4485420616463945=21121015432112345678?
-
-**Visa GSA Purchasing - CBA:**
-
-* **Keyed:**
-4716677219134014 Exp: 12/25
-* **Swiped:**
-%B4005562231212149^TEST CARD/VI^21121015432112345678?;4716677219134014=21121015432112345678?
-
-**Visa GSA Purchasing - IBA:**
-
-* **Keyed:**
-4716917729443632 Exp: 12/25
-* **Swiped:**
-%B4716917729443632^TEST CARD/VI^21121015432112345678?;4716917729443632=21121015432112345678?
-
-**Mastercard Personal:**
-
-* **Keyed:**
-5454545454545454 Exp: 12/25
-* **Swiped:**
-%B5454545454545454^TEST CARD/MC^21121015432112345678?;5454545454545454=21121015432112345678?
-
-**Mastercard Corporate/Purchase:**
-
-* **Keyed:**
-5405222222222226 Exp: 12/25
-* **Swiped:**
-%B5405222222222226^TEST CARD/MC^21121015432112345678?
-
-**Mastercard Credit:**
-
-* **Keyed:**
-5288071301680537 Exp: 12/25
-* **Swiped:**
-%B5288071301680537^TEST CARD/MC^21121015432112345678?
-
-**Mastercard Business Debit Prepaid:**
-
-* **Keyed:**
-5435815271011988 Exp: 12/25
-* **Swiped:**
-%B5435815271011988^TEST CARD/MC^21121015432112345678?
-
-
-**Mastercard Purchasing Card:**
-
-* **Keyed:**
-5470675332875417 Exp: 12/25
-* **Swiped:**
-%B5470675332875417^TEST CARD/MC^21121015432112345678?
-
-**Mastercard Government Commercial - CBA:**
-
-* **Keyed:**
-5565061411468182 Exp: 12/25
-* **Swiped:**
-%B5565061411468182^TEST CARD/MC^21121015432112345678?
-
-**Mastercard Government Commercial - IBA:**
-
-* **Keyed:**
-5568022953219547 Exp: 12/25
-* **Swiped:**
-%B5568022953219547^TEST CARD/MC^21121015432112345678?
-
-**Mastercard Fleet Purchasing:**
-
-* **Keyed:**
-5560988568989757 Exp: 12/25
-* **Swiped:**
-%B5560988568989757^TEST CARD/MC^21121015432112345678?
-
-**Mastercard Corporate Card:**
-
-* **Keyed:**
-5566806760567334 Exp: 12/25
-* **Swiped:**
-%B5566806760567334^TEST CARD/MC^21121015432112345678?
-
-**Discover:**
-
-* **Keyed:**
-6011000995500000 Exp: 12/25
-* **Swiped:**
-%B6011000995500000^TEST CARD/DI^21121015432112345678?;6011000995500000=21121015432112345678?
-
-**Amex:**
-
-* **Keyed:**
-371449635398431 Exp: 12/25
-* **Swiped:**
-%B371449635398431^TEST CARD/AX^21121015432112345678?;371449635398431=21121015432112345678?
+| Card Brand | Test Card Number | Card Type |
+|------------|------------------|------------|
+| Visa | 4556773060150333 | Debit Classic |
+| Visa | 4005562231212149 | Debit Classic |
+| Visa | 4916065618219339 | Credit |
+| Visa | 4485271031055802 | Purchasing Credit |
+| Visa | 4485420616463945 | Purchasing Fleet |
+| Visa | 4716677219134014 | GSA Purchasing – CBA |
+| Visa | 4716917729443632 | GSA Purchasing – IBA |
+| Visa | 4000491425554808 | Business Card |
+| Visa | 4001578329427195 | Business Card |
+| Visa | 4614677725500115 | GSA Purchasing – CBA |
+| Visa | 4486101754876333 | Government Corporate T&E |
+| Visa | 4486108123830545 | Government Corporate T&E |
+| Visa | 4851122993812597 | Visa Prepaid |
+| Visa | 4851128516839322 | Visa Prepaid |
+| MasterCard | 5288071301680537 | Personal Credit |
+| MasterCard | 5454545454545454 | MC B2B |
+| MasterCard | 5435815271011988 | Business Debit Prepaid |
+| MasterCard | 5470675332875417 | Purchasing Card |
+| MasterCard | 5405222222222226 | Purchasing Card |
+| MasterCard | 5565061411468182 | Government Commercial – CBA |
+| MasterCard | 5568022953219547 | Government Commercial – IBA |
+| MasterCard | 5560988568989757 | Fleet Purchasing |
+| MasterCard | 5566806760567334 | Corporate Card |
+| MasterCard | 5270123036862243 | MC Prepaid |
+| MasterCard | 5151577075814379 | MC Prepaid |
+| Amex | 379755502845466 | Consumer Credit |
+| Amex | 371449635398431 | Credit Personal |
+| Discover | 6011111111111117 | Personal Debit |
+| Discover | 6011000995500000 | Credit Rewards |
+| JCB | 3562164426662050 | JCB Credit |
+| Diners | 38692699346326 | Business Credit |
+| CUP | 6221499053360818 | CUP Credit |
 
 ## Virtual Device (Mock Terminal)
 
