@@ -1,5 +1,26 @@
 # Release Notes
 
+**Sandbox Release Date:** August 21st 2026
+
+**Production Release Date:** September 3rd 2026
+
+**UI Version 23.30.288-0**
+
+**API Version 1.0.1400-0**
+
+- API Response Update - Added an L3 Eligibility Flag to Transactions - A new response field has been added to transactions, level3_indicator. This field will return true if the transaction is Level 3 compatible and false if it is not level 3 compatible. This field will return when querying transaction records as well.
+- UI Update - Complete Rebranding of the Developer Portal. Replaced existing Paya branding with Nuvei. URL references will remain payaconnect.com.
+- Internal Updates - Updates to internal logging and tools for our platform support teams.
+- API Update - Level 3 Line Item debit_credit - With certain card types, the API would return an error when a lowercase "d" or "c" were used. The API has been corrected to accept either case for this value.
+
+**Production Release Date:** August 12th 2026
+
+**UI Version 23.30.287-0**
+
+**API Version 1.0.1399-0**
+
+- Minor Production Release - Addressed an issue where debit filtering was not being used when a previous transaction id was included in the place of a card number.
+
 **Sandbox Release Date:** July 24th 2026
 
 **Production Release Date:** August 6th 2026
