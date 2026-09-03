@@ -6,7 +6,7 @@
 
 **UI Version 23.30.288-0**
 
-**API Version 1.0.1400-0**
+**API Version 1.0.1401-0**
 
 - API Response Update - Added an L3 Eligibility Flag to Transactions - A new response field has been added to transactions, level3_indicator. This field will return true if the transaction is Level 3 compatible and false if it is not level 3 compatible. This field will return when querying transaction records as well.
 - UI Update - Complete Rebranding of the Developer Portal. Replaced existing Paya branding with Nuvei. URL references will remain payaconnect.com.
