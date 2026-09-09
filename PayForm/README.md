@@ -24,7 +24,9 @@ When utilizing a widget-style hosted payment form such as PayForm, Paya recommen
 * Tokenize URL that hosts access to the hosted form
 * Utilize IP Address velocity detection
 
-**Note: Beginning November 12th, 2025 all new PayForm integrations will be required to opt-in their Paya Connect Locations to our new one-time hash-key registry. This means that once a hash-key is used to submit a transaction request, the hash-key cannot be reused and a new PayForm link must be generated. Existing integrations may opt-in as needed once they've tested within the sandbox.**
+### Additional Security Notes:
+* **Beginning November 12th, 2025** all new PayForm integrations will be required to opt-in their Paya Connect Locations to our new one-time hash-key registry. This means that once a hash-key is used to submit a transaction request, the hash-key cannot be reused and a new PayForm link must be generated. Existing integrations may opt-in as needed once they've tested within the sandbox.
+* **Beginning September 9th, 2026** all Paya Connect Locations are included within the one-time hash-key registry.
 
 ## 1. Preparing data for the request
 Below you will see examples of a data JSON object for PayForm.  These requests are for demonstrative purposes only and there are additional fields that can be provided that are outlined below.
@@ -220,7 +222,7 @@ There are 5 required parameters for making the request. The following table desc
 | --- | --- | --- | --- |
 | user-id |	✔ |	✔ |	The user-id |
 | timestamp |	✔	| ✔	| The current time when the page has been generated. It has an expiry period of 5 minutes. |
-| hash-key |	✔ |	✔ |	This is the hash key provided by the API that is used to generate the signature hash. This key is secret and should not be shared with anyone. |
+| hash-key |	✔ |	✔ |	This is the hash key provided by the API that is used to generate the signature hash. This key is secret and should not be shared with anyone. Once used to process a transaction within PayForm, the integration will be required to generate a new hash-key to initiate a new instance of PayForm. |
 | developer-id |	✔ |	✔ |	The developer-id is something that should be hard coded into your software. This is only for you to use and should be embedded in your software so that you shouldn't have to openly provide it to merchants/customers. |
 | data	| |	✔	| This should be hexed to prevent users from altering the data that is intended to be transmitted. |
 
@@ -234,7 +236,9 @@ There are 3 parameters that are required to generate a signature hash.
 
 The hash is generated using the user id and timestamp, in that specific order. The generated HMAC will be good for 15 minutes.
 
-**Note: Beginning November 12th, 2025 all new PayForm integrations will be required to opt-in their Paya Connect Locations to our new one-time hash-key registry. This means that once a hash-key is used to submit a transaction request, the hash-key cannot be reused and a new PayForm link must be generated. Existing integrations may opt-in as needed once they've tested within the sandbox.**
+### Notes:
+* **Beginning November 12th, 2025** all new PayForm integrations will be required to opt-in their Paya Connect Locations to our new one-time hash-key registry. This means that once a hash-key is used to submit a transaction request, the hash-key cannot be reused and a new PayForm link must be generated. Existing integrations may opt-in as needed once they've tested within the sandbox.
+* **Beginning September 9th, 2026** all Paya Connect Locations are included within the one-time hash-key registry.
 
 ## 3. Using the URL to retrieve the form
 After following the steps outlined above, you should have a URL that can be used to embed the form into another website or application.  That URL should look similar to the following:
