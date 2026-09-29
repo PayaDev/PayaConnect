@@ -1,8 +1,8 @@
-# Paya Connect Recommended Path of Integration
+# Nuvei Integrated Payments Group (NIPG) Connect (formerly Paya Connect) Recommended Path of Integration
 
 ## Overview
 
-This page will walk through the Paya recommended path for integration.  This path will provide the easiest deployment of the Paya Connect APIs and should reduce the scope for PCI-DSS for most integrators that follow this method.
+This page will walk through the NIPG recommended path for integration.  This path will provide the easiest deployment of the Paya Connect APIs and should reduce the scope for PCI-DSS for most integrators that follow this method.
 
 ## Require Credentials
 | **Intended For**  |      **Field Name**     | **Purpose**                                                                                                              |
