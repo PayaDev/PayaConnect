@@ -17,7 +17,7 @@ Whether you are attempting to use PayForm or AccountForm, the process for genera
 5. Depending on additional parameters that the developer can supply, the iframe may close the window it appears in automatically or redirect to another URL.
 
 ### Important Security Note
-When utilizing a widget-style hosted payment form such as AccountForm, Paya recommends enabling security factoring of some kind to prevent malicious activity.  While the below-listed methods are not an exhaustive list, they are the most common: 
+When utilizing a widget-style hosted payment form such as AccountForm, Nuvei recommends enabling security factoring of some kind to prevent malicious activity.  While the below-listed methods are not an exhaustive list, they are the most common: 
 
 * Require login access (username/password)
 * Utilize CAPTCHA/reCAPTCHA
