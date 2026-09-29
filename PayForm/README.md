@@ -17,7 +17,7 @@ Whether you are attempting to use Payform or Accountform, the process for genera
 5. Depending on additional parameters that the developer can supply, the iframe may close the window it appears in automatically or redirect to another URL.
 
 ### Important Security Note
-When utilizing a widget-style hosted payment form such as PayForm, Paya recommends enabling security factoring of some kind to prevent malicious activity.  While the below-listed methods are not an exhaustive list, they are the most common: 
+When utilizing a widget-style hosted payment form such as PayForm, Nuvei recommends enabling security factoring of some kind to prevent malicious activity.  While the below-listed methods are not an exhaustive list, they are the most common: 
 
 * Require login access (username/password)
 * Utilize CAPTCHA/reCAPTCHA
@@ -25,8 +25,8 @@ When utilizing a widget-style hosted payment form such as PayForm, Paya recommen
 * Utilize IP Address velocity detection
 
 ### Additional Security Notes:
-* **Beginning November 12th, 2025** all new PayForm integrations will be required to opt-in their Paya Connect Locations to our new one-time hash-key registry. This means that once a hash-key is used to submit a transaction request, the hash-key cannot be reused and a new PayForm link must be generated. Existing integrations may opt-in as needed once they've tested within the sandbox.
-* **Beginning September 9th, 2026** all Paya Connect Locations are included within the one-time hash-key registry.
+* **Beginning November 12th, 2025** all new PayForm integrations will be required to opt-in their Nuvei Integrated Payments Group (NIPG) Connect (formerly Paya Connect) Locations to our new one-time hash-key registry. This means that once a hash-key is used to submit a transaction request, the hash-key cannot be reused and a new PayForm link must be generated. Existing integrations may opt-in as needed once they've tested within the sandbox.
+* **Beginning September 9th, 2026** all NIPG Connect Locations are included within the one-time hash-key registry.
 
 ## 1. Preparing data for the request
 Below you will see examples of a data JSON object for PayForm.  These requests are for demonstrative purposes only and there are additional fields that can be provided that are outlined below.
